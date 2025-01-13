@@ -4,7 +4,7 @@ layout: layout.html
 ---
 <section class="section-submission">
     <h1>Leerräume einreichen</h1>
-    <form>
+    <form action="POST" data-netlify="true">
         <input type="text" id="name" name="name"placeholder="Gebäude-/Raumname" required><br><br>
         
         <input type="text" id="plz" name="plz" placeholder="Postleitzahl" required><br><br>
@@ -19,6 +19,8 @@ layout: layout.html
         <label for="file" class="btn-upload-file">Bilder hochladen</label><br>
         <input type="file" id="file" name="file" accept="image/*" multiple required><br><br>
         </div>
+
+        <div data-netlify-recaptcha="true"></div>
 
         <button class="btn-submit" type="submit">Einreichen</button>
     </form>
