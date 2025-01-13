@@ -2,9 +2,23 @@
 permalink: "/submit/"
 layout: layout.html
 ---
+<section class="section-gallery">
+    <div class="carousel">
+        {% for post in collections.posts %}
+        <div class="container-img">
+            {% if post.data.preview-image %}
+            <a class="img-link" target="_blank" href="{{ post.url }}">
+                <img class="carousel-item" src="{{ post.data.preview-image }}" alt="{{ post.data.title }}">
+            <p class="text-on-img invisible">{{ post.data.plz }}</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
 <section class="section-submission">
     <h1>Leerräume einreichen</h1>
-    <form action="POST" data-netlify="true">
+    <form method="POST" data-netlify="true">
         <input type="text" id="name" name="name"placeholder="Gebäude-/Raumname" required><br><br>
         
         <input type="text" id="plz" name="plz" placeholder="Postleitzahl" required><br><br>
@@ -22,7 +36,7 @@ layout: layout.html
 
         <div class="captcha-submit" data-netlify-recaptcha="true"></div>
 
-        <button class="btn-submit" type="submit">Einreichen</button>
+        <button class="btn-submit" type="submit" value="Send Message">Einreichen</button>
     </form>
 
 </section>
