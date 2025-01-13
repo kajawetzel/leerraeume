@@ -456,6 +456,10 @@ form{
   margin-top: -10px;
 }
 
+.captcha-submit{
+  padding: 10px;
+}
+
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
 display: none;
