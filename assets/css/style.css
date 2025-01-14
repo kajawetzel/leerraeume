@@ -450,7 +450,7 @@ form{
 }
 
 .btn-submit:hover{
-  transform: scale(1.1);
+  transform: scale(1.15);
   background-color: white;
 }
 
@@ -467,7 +467,8 @@ form{
 }
 
 .captcha-submit{
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .section-gallery-submit{
