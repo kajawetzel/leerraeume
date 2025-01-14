@@ -420,7 +420,16 @@ label{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
 }
+/*
+.container-submission{
+  transform: perspective(1000px) rotateY(40deg);
+  padding-top: 20px;
+}*/
 
 input, textarea, .btn-submit{
   border-radius: 0;
@@ -460,6 +469,9 @@ form{
   padding: 10px;
 }
 
+.section-gallery-submit{
+  filter: grayscale(1) brightness(0.5) contrast(1.9) saturate(0);
+}
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
 display: none;

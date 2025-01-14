@@ -1,0 +1,13 @@
+<section class="section-gallery">
+    <div class="carousel">
+        {% for post in collections.posts %}
+        <div class="container-img">
+            {% if post.data.preview-image %}
+            <a class="img-link" target="_blank" href="{{ post.url }}">
+                <img class="carousel-item" src="{{ post.data.preview-image | url }}" alt="{{ post.data.title }}">
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

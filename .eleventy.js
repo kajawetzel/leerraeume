@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("pages");
 
 eleventyConfig.addFilter("addTargetBlank", function(content) {
     const { JSDOM } = require("jsdom");
