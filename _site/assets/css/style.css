@@ -432,7 +432,9 @@ label{
   padding-top: 20px;
 }*/
 
-input, textarea, .btn-submit{
+input,
+textarea,
+.btn-submit{
   border-radius: 0;
   border: 3px solid white;
   line-height: 20px;
@@ -443,6 +445,14 @@ input, textarea, .btn-submit{
 
 input, textarea{
   min-width: 300px;
+}
+
+input:focus, 
+textarea:focus,
+input:hover, 
+textarea:hover{
+  outline: none;
+  transform: scale(1.05);
 }
 
 form{
