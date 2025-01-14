@@ -91,7 +91,7 @@ img:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Move everything to the left */
+    transform: translateX(-100%);
   }
 }
 
