@@ -15,7 +15,7 @@ layout: layout.html
 <section class="section-text-posts">
     <h1 class="text-subpage title-subpage">{{ title }}</h1>
     <div class="container-text-posts">
-        <h2 class="text-subpage details-text-subpage">{{ plz }} {{ ort }}</h2>
+        <h2 class="text-subpage details-text-subpage text-indent">{{ plz }} {{ ort }}</h2>
         <p class="text-subpage details-text-subpage description-text-subpage">{{ description }}</p>
     </div>
 </section> 
