@@ -346,6 +346,10 @@ img:hover {
   font-size: 1rem;
 }
 
+.text-subpage{
+  text-shadow: 2px 2px 10px #505050;
+}
+
 /*Buttons*/
 .container-btn{
   width: 100vw;
@@ -364,6 +368,7 @@ img:hover {
   z-index: 100;
   font-size: 3rem;
   font-family: Font1;
+  text-shadow: 2px 2px 10px #505050;
 }
 
 .btn:hover{
@@ -389,23 +394,27 @@ img:hover {
   }
 
   .details-text-subpage{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+
+  .container-text-posts{
+    width: 60vw;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .section-text-posts{
-    left: 0vw;
-    padding: 15px;
-  }
 
-  .container-text-posts{
-    width: 87vw;
+    padding: 15px;
   }
 
   .details-text-subpage{
     font-size: 0.9rem;
   }
+
+  .btn{
+    margin: 20px;
 }
 
 /*EINREICHEN_________________________________________________________________*/
