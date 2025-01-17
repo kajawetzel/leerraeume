@@ -6,8 +6,8 @@ layout: layout.html
 {% include "gallery.html" %}
 </div>
 <section class="section-submission">
-    <h1>Leerräume einreichen</h1>
     <div class="container-submission">
+    <h1>Leerräume einreichen</h1>
     <form name="submission" method="POST" data-netlify="true" onSubmit="submit">
         <input type="hidden" name="subject" 
             value="Sales inquiry from leerraeume.netlify.app" />

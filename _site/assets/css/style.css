@@ -58,7 +58,7 @@ line-height: 1.25;
   display: flex;
   margin-top: 9vh;
   width: 100%;
-  animation: scroll-carousel 10s linear infinite;
+  animation: scroll-carousel 14s linear infinite;
 }
 
 .carousel-item {
@@ -178,9 +178,6 @@ img:hover {
     width: 35vw;
     bottom: 16vh;
   }
-  h1{
-    font-size: 2.8rem;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -245,7 +242,7 @@ img:hover {
   }
 
   .subheading{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
@@ -273,7 +270,6 @@ img:hover {
     padding-top: 14px;
   }
 }
-
 /*SUBPAGES_____________________________________________________________________________________________-*/
 /*POSTS________________________________________________________________*/
 /*Images*/
@@ -456,7 +452,7 @@ label{
   padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   text-align: center;
   position: absolute;
   width: 100vw;
@@ -464,11 +460,11 @@ label{
   top: 0;
   overflow-x: auto;
 }
-/*
+
 .container-submission{
-  transform: perspective(1000px) rotateY(40deg);
+  transform: perspective(1000px) rotateY(-40deg);
   padding-top: 20px;
-}*/
+}
 
 input,
 textarea,
@@ -512,16 +508,18 @@ form{
   min-width: 300px;
   text-align: left;
   margin-top: -10px;
+  margin-left: 125px;
 }
 
 .captcha-submit{
   padding-top: 10px;
   padding-bottom: 20px;
 }
-
+/*
 .section-gallery-submit{
-  filter: grayscale(1) brightness(0.5) contrast(1.9) saturate(0);
+  filter: grayscale(0) brightness(0.5) contrast(1.9) saturate(0);
 }
+*/
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
 display: none;
