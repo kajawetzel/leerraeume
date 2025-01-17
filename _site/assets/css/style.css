@@ -26,14 +26,11 @@ body {
   height: 100vh;
 }
 
-h1, h2 {
-  font-family: Font1;
-}
-
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  font-family: Font1;
 }
 
 h2{
@@ -41,12 +38,13 @@ h2{
   font-size: 1rem;
   color: white;
   line-height: 1;
+  font-family: Font2;
 }
 
 p{
 color: white;
 font-size: 1.1rem;
-font-family: Font1;
+font-family: Font2;
 padding: 5px;
 hyphens: auto;
 line-height: 1.25;
@@ -116,6 +114,7 @@ img:hover {
 .subheading{
   font-size: 0.8rem;
   hyphens: auto;
+  font-family: Font2;
 }
 
 .link-submit{
@@ -265,7 +264,7 @@ img:hover {
 
   .subheading{
     font-size: 1.1rem;
-    line-height: 1;
+    line-height: 1.1;
     padding-top: 7px;
   }
 
@@ -349,7 +348,7 @@ img:hover {
 }
 
 .text-subpage{
-  text-shadow: 2px 2px 10px #505050;
+  text-shadow: 2px 2px 10px #7c7c7c4d;
 }
 
 /*Buttons*/
