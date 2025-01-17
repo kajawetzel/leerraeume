@@ -11,7 +11,7 @@ layout: layout.html
     <form name="submission" method="POST" data-netlify="true" onSubmit="submit">
         <input type="hidden" name="subject" 
             value="Sales inquiry from leerraeume.netlify.app" />
-        <input type="text" id="name" name="name"placeholder="Gebäude-/Raumname" required><br><br>
+        <input type="text" id="name" name="name" placeholder="Gebäude-/Raumname" required><br><br>
         <input type="text" id="plz" name="plz" placeholder="Postleitzahl" required><br><br>
         <input type="text" id="ort" name="ort" placeholder="Ort" required><br><br>
         <input type="email" id="email" name="email" placeholder="E-Mail" required><br><br>
