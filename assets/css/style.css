@@ -9,13 +9,8 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -26,23 +21,24 @@ body {
   height: 100vh;
 }
 
+h1, h2, p {
+  color: white;
+}
+
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  color: white;
   font-family: Font1;
 }
 
-h2{
+h2 {
   margin-left: 2rem;
   font-size: 1rem;
-  color: white;
   line-height: 1;
   font-family: Font2;
 }
 
-p{
-color: white;
+p {
 font-size: 1.1rem;
 font-family: Font2;
 padding: 5px;
@@ -53,8 +49,8 @@ line-height: 1.25;
 .section-gallery {
   transform: perspective(600px) rotateY(40deg);
   overflow-y: hidden;
-  scrollbar-width: none; /* Hides the scrollbar (optional) */
-  -ms-overflow-style: none; /* Hides the scrollbar for IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 150vw;
 }
 
@@ -100,7 +96,7 @@ img:hover {
   }
 }
 
-.menu{
+.menu {
   position: fixed;  
   bottom: 18vh;
   right: -10px;
@@ -109,22 +105,22 @@ img:hover {
   width: 22vw;
 }
 
-.menu:hover{
+.menu:hover {
   transform: perspective(0px) scale(150%);
   right: 150px;
 }
 
-.menu-item:hover{
+.menu-item:hover {
   font-size: 1.5rem;
 }
 
-.subheading{
+.subheading {
   font-size: 0.8rem;
   hyphens: auto;
   font-family: Font2;
 }
 
-.link-submit{
+.link-submit {
   padding-top: 0.8rem;
   text-transform: uppercase;
   display: none;
@@ -138,7 +134,6 @@ img:hover {
   transform: scale(1.1);
   text-decoration: underline;
 }
-
 /*MEDIA QUERIES landing page*/
 @media only screen and (max-width: 1200px) {
   .menu{
@@ -531,11 +526,4 @@ form{
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
 display: none;
-}
-
-.back-link{
-position: fixed;
-top: 10px;
-left: 10px;
-background-color: transparent;
 }
