@@ -401,7 +401,7 @@ img:hover {
   }
 
   .container-text-posts{
-    width: 60vw;
+    width: 67vw;
   }
 }
 
@@ -412,6 +412,7 @@ img:hover {
 
   .section-text-posts{
     padding: 15px;
+    left: 14vw;
   }
 
   .details-text-subpage{
@@ -441,12 +442,7 @@ img:hover {
   }
 
   .section-text-posts{
-    left: 14vw;
     top: 10vh;
-  }
-
-  .container-text-posts{
-    width: 67vw;
   }
 }
 
