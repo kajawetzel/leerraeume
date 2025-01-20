@@ -7,7 +7,7 @@ layout: layout.html
 </div>
 <section class="section-submission">
     <div class="container-submission">
-    <h1>Leerräume einreichen</h1>
+    <h1>Leerräume<br>einreichen</h1>
     <form name="submission" method="POST" data-netlify="true" onSubmit="submit">
         <input type="hidden" name="subject" 
             value="Sales inquiry from leerraeume.netlify.app" />

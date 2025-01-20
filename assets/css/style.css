@@ -23,12 +23,15 @@ body {
 
 h1, h2, p {
   color: white;
+  text-shadow: 2px 1px rgb(152, 152, 152);
+  hyphens: auto;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: Font1;
+  line-height: 0.9;
 }
 
 h2 {
@@ -58,7 +61,7 @@ line-height: 1.25;
   display: flex;
   margin-top: 9vh;
   width: 100%;
-  animation: scroll-carousel 14s linear infinite;
+ /* animation: scroll-carousel 14s linear infinite;*/
 }
 
 .carousel-item {
@@ -101,10 +104,12 @@ img:hover {
   bottom: 18vh;
   right: -10px;
   z-index: 5;
+  transform: perspective(1000px) rotateY(-40deg);
+  /*
   transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
-  width: 22vw;
+  width: 22vw;*/
 }
-
+/*
 .menu:hover {
   transform: perspective(0px) scale(150%);
   right: 150px;
@@ -113,6 +118,7 @@ img:hover {
 .menu-item:hover {
   font-size: 1.5rem;
 }
+*/
 
 .subheading {
   font-size: 0.8rem;
@@ -123,13 +129,12 @@ img:hover {
 .link-submit {
   padding-top: 0.8rem;
   text-transform: uppercase;
-  display: none;
 }
-
+/*
 .menu:hover .link-submit{
   display: block;
 }
-
+*/
 .link-submit:hover{
   transform: scale(1.1);
 }
@@ -444,7 +449,7 @@ img:hover {
 
 /*EINREICHEN_________________________________________________________________*/
 label{
-  font-family: Font1;
+  font-family: Font2;
 }
 
 .section-submission{
@@ -469,17 +474,19 @@ input,
 textarea,
 .btn-submit{
   border-radius: 0;
-  border: 2px solid white;
+  border: 3px outset white;
   line-height: 20px;
-  font-family: Font1;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: transparent;
   color: white;
   padding: 2px;
+  background-color: white;
+  color: black;
+  font-family: Font2;
 }
 
 input, textarea{
-  min-width: 300px;
+  width: 300px;
 }
 
 input:focus, 
@@ -508,12 +515,22 @@ form{
   min-width: 300px;
   text-align: left;
   margin-top: -10px;
-  margin-left: 125px;
+  margin-left: 65px;
 }
 
 .captcha-submit{
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+input::placeholder,
+textarea::placeholder{
+  color: black;
+}
+
+label{
+  color: white;
+
 }
 /*
 .section-gallery-submit{
