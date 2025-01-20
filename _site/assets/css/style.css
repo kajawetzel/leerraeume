@@ -31,7 +31,7 @@ h1 {
   font-size: 4.5rem;
   text-transform: uppercase;
   font-family: Font1;
-  line-height: 0.9;
+  line-height: 0.85;
 }
 
 h2 {
@@ -47,6 +47,11 @@ font-family: Font2;
 padding: 5px;
 hyphens: auto;
 line-height: 1.25;
+}
+
+strong{
+  font-family: Font3;
+  font-weight: normal;
 }
 /*LANDING PAGE_________________________________________________________________*/
 .section-gallery {
@@ -132,7 +137,7 @@ img:hover {
   background-color: white;
   text-shadow: none;
   padding: 5px;
-  border: 2px inset white;
+  border: 2px outset white;
   line-height: 1.1;
 }
 
@@ -334,35 +339,35 @@ img:hover {
   position: fixed;
   flex-direction: column;
   top: 15vh;
-  left: 15vw;
-  width: 70vw;
-}
-
-.container-text-posts{
+  right: 15vw;
+  transform: perspective(600px) rotateY(-20deg);
+  hyphens: auto;
   width: 400px;
-  margin-top: -5px;
 }
 
 .title-subpage{
   font-family: Font1;
   font-size: 4rem;
-  line-height: 0.9;
-  margin-bottom: 10px;
-  hyphens: auto
+  hyphens: auto;
+  margin-bottom: 7px;
+  text-shadow: 2px 1px rgb(152, 152, 152);
+
 }
 
 .description-text-subpage{
   padding-top: 1rem;
   line-height: 1.1;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 2px outset white;
+  text-shadow: none;
 }
 
 .details-text-subpage{
   font-size: 1rem;
 }
 
-.text-subpage{
-  text-shadow: 2px 2px 10px #7c7c7c4d;
-}
 
 /*Buttons*/
 .container-btn{
@@ -382,7 +387,7 @@ img:hover {
   z-index: 100;
   font-size: 3rem;
   font-family: Font1;
-  text-shadow: 2px 2px 10px #505050;
+  text-shadow: 1px 2px rgb(123, 123, 123);
 }
 
 .btn:hover{

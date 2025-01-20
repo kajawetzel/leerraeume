@@ -7,3 +7,9 @@
     font-family: Font2;
     src: url(../fonts/Baskervville-Regular.woff2)
 }
+
+@font-face {
+    font-family: Font3;
+    src: url(../fonts/Baskervville-Italic.woff2)
+}
+
