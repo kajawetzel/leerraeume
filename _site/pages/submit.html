@@ -1,10 +1,10 @@
----
+<!-- ---
 permalink: "/submit/"
 layout: layout.html
---- 
-<div class="section-gallery-submit" id="section-gallery-submit">
+--- -->
+<!--<div class="section-gallery-submit" id="section-gallery-submit">
 {% include "gallery.html" %}
-</div>
+</div>-->
 <section id="section-submission">
     <div class="container-submission">
     <h1 class="title-subpage">Leerraum<br>einreichen</h1>
@@ -15,7 +15,9 @@ layout: layout.html
         <input type="text" id="plz" name="plz" placeholder="Postleitzahl" required><br><br>
         <input type="text" id="ort" name="ort" placeholder="Ort" required><br><br>
         <input type="email" id="email" name="email" placeholder="E-Mail" required><br><br>
-        <textarea id="description" name="description" placeholder="Beschreibung und Tipps für Kontaktmöglichkeiten" rows="10" cols="30" required></textarea><br>
+        <textarea id="description" name="description"
+            placeholder="Beschreibung und Tipps für Kontaktmöglichkeiten" rows="10" cols="30" required>
+        </textarea><br>
         <div class="container-img-upload">
             <label for="file" class="btn-upload-file">Bilder hochladen</label><br>
             <input type="file" id="file" name="file" accept="image/*" multiple required><br>
@@ -23,11 +25,12 @@ layout: layout.html
         <div class="captcha-submit" data-netlify-recaptcha="true"></div>
         <button class="btn-submit" type="submit" value="Send Message">Einreichen</button>
     </form>
-    </div>
+</div>
 </section>
-
+<!--
 <a href="/index.html" class="container-link-landing-page">
 <div class="link-landing-page"></div>
 <div class="link-landing-page"></div>
 <div class="link-landing-page"></div>
 </a> 
+-->

@@ -22,8 +22,8 @@ body {
 }
 
 h1, h2, p {
-  color: white;
-  text-shadow: 2px 1px rgb(152, 152, 152);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px rgb(123, 123, 123);
   hyphens: auto;
 }
 
@@ -60,13 +60,14 @@ strong{
   scrollbar-width: none;
   -ms-overflow-style: none;
   width: 150vw;
+  position: fixed;
 }
 
 .carousel {
   display: flex;
   margin-top: 9vh;
   width: 100%;
- animation: scroll-carousel 14s linear infinite;
+  animation: scroll-carousel 20s linear infinite;
 }
 
 .carousel-item {
@@ -100,7 +101,7 @@ img:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
   }
 }
 
@@ -110,6 +111,7 @@ img:hover {
   right: 0px;
   z-index: 5;
   transform: perspective(1000px) rotateY(-40deg);
+  width: 480px;
   /*
   transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
   width: 22vw;*/
@@ -124,26 +126,31 @@ img:hover {
   font-size: 1.5rem;
 }
 */
-.heading{
-  margin-left: -40px;
-}
+
 
 .subheading {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   hyphens: auto;
-  font-family: Font2;
-  width: 350px;
-  color: black;
-  background-color: white;
-  text-shadow: none;
-  padding: 5px;
-  border: 2px outset white;
+  font-family: Font1;
+  color: white;
+  text-shadow: 2px 1px rgb(123, 123, 123);
   line-height: 1.1;
+  margin-top: -10px;
 }
 
 .link-submit {
-  margin-top: 1rem;
+  position: fixed;
+  bottom: 30px;
+  right: 25vw;
+  font-size: 0.8rem;
   text-decoration: underline;
+  font-family: Font2;
+  background-color: white;
+  color: black;
+  border: 2px outset white;
+  width: auto;
+  text-shadow: none;
+  transform: perspective(600px) rotateY(40deg);
 }
 /*
 .menu:hover .link-submit{
@@ -151,7 +158,7 @@ img:hover {
 }
 */
 .link-submit:hover{
-  transform: scale(1.1);
+  transform: perspective(600px) rotateY(40deg) scale(1.1);
 }
 /*MEDIA QUERIES landing page*/
 /*
@@ -350,7 +357,7 @@ img:hover {
   font-size: 4rem;
   hyphens: auto;
   margin-bottom: 7px;
-  text-shadow: 2px 1px rgb(152, 152, 152);
+  text-shadow: 2px 1px rgb(123, 123, 123);
 
 }
 
@@ -367,7 +374,6 @@ img:hover {
 .details-text-subpage{
   font-size: 1rem;
 }
-
 
 /*Buttons*/
 .container-btn{
@@ -468,16 +474,16 @@ label{
   font-family: Font2;
 }
 
-.section-submission{
+#section-submission{
+  position: absolute;
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  text-align: center;
-  position: absolute;
+  justify-content: center;
+  text-align: left;
   width: 100vw;
   height: 100vh;
-  top: 0;
   overflow-x: auto;
 }
 
@@ -490,19 +496,21 @@ input,
 textarea,
 .btn-submit{
   border-radius: 0;
-  border: 3px outset white;
-  line-height: 20px;
-  font-size: 1.2rem;
+  line-height: 1.1;
+  font-size: 1.1rem;
   background-color: transparent;
   color: white;
   padding: 2px;
   background-color: white;
+  border: 3px outset white;
   color: black;
   font-family: Font2;
+  width: 400px;
 }
 
-input, textarea{
-  width: 300px;
+.btn-submit{
+  width: auto;
+  text-decoration: underline;
 }
 
 input:focus, 
@@ -514,7 +522,7 @@ textarea:hover{
 }
 
 form{
-  margin-top: 20px;
+  margin-top: -5px;
 }
 
 .btn-submit:hover{
@@ -528,10 +536,8 @@ form{
 }
 
 .container-img-upload{
-  min-width: 300px;
   text-align: left;
-  margin-top: -10px;
-  margin-left: 65px;
+  margin-top: 10px;
 }
 
 .captcha-submit{
@@ -546,14 +552,30 @@ textarea::placeholder{
 
 label{
   color: white;
+}
 
-}
-/*
 .section-gallery-submit{
-  filter: grayscale(0) brightness(0.5) contrast(1.9) saturate(0);
+  filter: contrast(1000) brightness(700) grayscale(150);
 }
-*/
+
+/*LANDING_PAGE_BUTTON___________________________________________________*/
+.container-link-landing-page{
+  display: flex;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  transform: perspective(120px) rotateY(40deg);
+  gap: 2px;
+}
+
+.link-landing-page{
+  width: 20px;
+  height: 30px;
+  background-color: white;
+}
+
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
-display: none;
-}
+  display: none;
+  }
+  
