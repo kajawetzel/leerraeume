@@ -18,7 +18,6 @@ layout: layout.html
             <label for="file" class="btn-upload-file">Bilder hochladen</label><br>
             <input type="file" id="file" name="file" accept="image/*" multiple required><br>
         </div>
-        <div class="captcha-submit" data-netlify-recaptcha="true"></div>
         <button class="btn-submit" type="submit" value="Send Message">Einreichen</button>
     </form>
     </div>
