@@ -14,3 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imgLinks = document.querySelectorAll(".img-link");
+
+  imgLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // Standard-Link-Verhalten verhindern
+
+      const targetUrl = link.href; // Ziel-URL speichern
+      const image = link.querySelector("img"); // Bild im Link finden
+
+      // Animation hinzufügen
+      image.classList.add("transition");
+
+      // Nach der Animationsdauer zur Zielseite navigieren
+      setTimeout(() => {
+        window.location.href = targetUrl;
+      }, 800); // Animationsdauer: 0.8s
+    });
+  });
+});
+

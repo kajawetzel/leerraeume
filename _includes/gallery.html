@@ -4,7 +4,7 @@
         <div class="container-img">
             {% if post.data.preview-image %}
             <a class="img-link" href="{{ post.url }}">
-                <img class="carousel-item" src="{{ post.data.preview-image | url }}" alt="{{ post.data.title }}">
+                <img id="transition-inside" class="carousel-item" src="{{ post.data.preview-image | url }}" alt="{{ post.data.title }}">
             </a>
             {% endif %}
         </div>

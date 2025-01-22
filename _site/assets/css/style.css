@@ -29,7 +29,7 @@ h1, h2, p {
 
 h1 {
   font-size: 4.5rem;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: Font1;
   line-height: 0.85;
 }
@@ -61,6 +61,7 @@ strong{
   -ms-overflow-style: none;
   width: 150vw;
   position: fixed;
+  animation: transition-posts 0.8s ease-in-out;
 }
 
 .carousel {
@@ -74,7 +75,6 @@ strong{
   height: 70vh;
   filter: sepia(0.1);
   transition: transform 0.2s ease, filter 0.5s ease;
-  flex-shrink: 0;
 }
 
 img:hover {
@@ -127,7 +127,6 @@ img:hover {
 }
 */
 
-
 .subheading {
   font-size: 1.4rem;
   hyphens: auto;
@@ -148,8 +147,31 @@ img:hover {
   width: 135px;
   text-shadow: none;
   margin-top: 10px;
-
 }
+/*Übergang zu Unterseite*/
+@keyframes transition-inside-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 100;
+  }
+  50% {
+    opacity: 0.8;
+    z-index: 100;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+    z-index: 100;
+  }
+}
+
+.img-link img.transition {
+  animation: transition-inside-animation 1s ease-in-out forwards;
+  height: 100vh; /* Die gesamte Höhe des Viewports abdecken */
+  width: a;
+}
+
 /*
 .menu:hover .link-submit{
   display: block;
@@ -334,6 +356,20 @@ img:hover {
 
 .container-img-posts img:nth-child(n+4) {
   display: none;
+}
+
+@keyframes transition-posts {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container-img-posts{
+  animation: transition-posts 0.8s ease-in-out;
 }
 
 /*Typo*/
@@ -575,6 +611,10 @@ label{
   width: 20px;
   height: 30px;
   background-color: white;
+}
+
+.container-link-landing-page:hover{
+  transform: perspective(120px) rotateY(40deg) scale(1.1);
 }
 
 /*SUCCESS_PAGE_________________________________________________________________*/
