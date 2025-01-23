@@ -70,6 +70,10 @@ strong{
   position: fixed;
 }
 
+.section-gallery-landing-page{
+  animation: transition-posts 1s ease;
+}
+
 .carousel {
   display: flex;
   margin-top: 9vh;
@@ -153,6 +157,11 @@ img:hover {
   width: auto;
   padding: 5px;
 }
+
+.link-submit:hover{
+  font-size: 1.2rem;
+}
+
 /*Übergang zu Unterseite*/
 @keyframes transition-inside-animation {
   0% {
@@ -172,10 +181,6 @@ img:hover {
   animation: transition-inside-animation 1s ease-in-out forwards;
   height: 100vh; /* Die gesamte Höhe des Viewports abdecken */
   z-index: 100;
-}
-
-.link-submit:hover{
-  transform: scale(1.1);
 }
 
 @keyframes move-up-outside {
@@ -393,11 +398,27 @@ img:hover {
   position: fixed;
   width: 30px;
   height: 30px;
-  background-color: var(--color2);
-  bottom: 5vh;
-  right: 40vw;
-  border: 2px outset var(--color2);
+  top: 0;
+  right: 30px;
   transform: perspective(600px) rotateX(-40deg);
+  cursor: pointer;
+}
+
+.summary-btn{
+  font-family: Font2;
+  text-shadow: 2px 1px var(--color3);
+  color: var(--color2);
+  font-size: 5rem;
+  transition: all 0.3s ease;
+}
+
+.summary-btn.rotate {
+  transform: rotate(180deg)translateX(-16px);
+}
+
+.summary-text-posts:hover,
+.summary-text-posts:active{
+  transform: perspective(600px) rotateX(-40deg) scale(1.2);
 }
 
 /*Typo*/
@@ -409,9 +430,29 @@ img:hover {
   flex-direction: column;
   top: 15vh;
   right: 15vw;
-  transform: perspective(600px) rotateY(-20deg);
+  transform: perspective(600px) rotateY(-20deg) translateY(100vh);
   hyphens: auto;
   width: 400px;
+  transition: transform .5s ease-in-out;
+}
+
+/* Geöffneter Zustand */
+details.open .section-text-posts {
+  animation: move-up-inside .8s ease-in-out forwards;
+}
+
+/* Geschlossener Zustand */
+details.close .section-text-posts {
+  animation: move-down-outside .8s ease-in-out forwards;
+}
+
+@keyframes move-down-outside {
+  0% {
+    transform: translateY(0); /* Start in der offenen Position */
+  }
+  100% {
+    transform: translateY(100vh); /* Endposition außerhalb des Bildschirms */
+  }
 }
 
 .title-subpage{
@@ -420,7 +461,6 @@ img:hover {
   hyphens: auto;
   margin-bottom: 7px;
   text-shadow: 2px 1px var(--color3);
-
 }
 
 .description-text-subpage{
@@ -454,12 +494,12 @@ img:hover {
   border: none;
   z-index: 100;
   font-size: 3rem;
-  font-family: Font1;
+  font-family: Font2;
   text-shadow: 1px 2px var(--color3);
 }
 
 .btn:hover{
-  transform: scale(170%);
+  transform: scale(1.5);
 }
 
 @media only screen and (max-width: 680px) {
@@ -580,7 +620,9 @@ textarea,
 input:focus, 
 textarea:focus,
 input:hover, 
-textarea:hover{
+textarea:hover,
+.container-img-upload:hover,
+.container-img-upload:focus{
   outline: none;
   transform: scale(1.05);
 }
@@ -601,11 +643,15 @@ form{
   font-size: 0.8rem;
   display: hidden;
   cursor: pointer;
+  transform: none;
+  border: none;
 }
 
 .container-img-upload{
   text-align: left;
-  margin-top: 10px;
+  margin-top: 30px;
+  background-color: var(--color2);
+  border: 2px outset var(--color2);
 }
 
 input::placeholder,
@@ -617,6 +663,12 @@ label{
   color: var(--color2);
 }
 
+.btn-upload-file{
+  font-size: 1.1rem;
+  color: var(--color1);
+  padding: 5px;
+  padding-top: 5px;
+}
 
 @keyframes move-up-inside {
   0% {

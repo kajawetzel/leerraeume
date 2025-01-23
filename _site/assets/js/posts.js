@@ -5,12 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnRight = document.querySelector(".btn-right");
 
   // Get the images dynamically using a `data-images` attribute from the container
-  const images = JSON.parse(container.dataset.images || "[]");
+  const images = JSON.parse(container?.dataset.images || "[]");
   let currentIndex = 0; // Start with the first image
   const visibleImages = 3; // Number of images to show at once
 
   // Function to render images
   function renderImages() {
+    if (!container) return;
     container.innerHTML = ""; // Clear existing images
     for (let i = 0; i < visibleImages; i++) {
       const img = document.createElement("img");
@@ -41,5 +42,28 @@ document.addEventListener("DOMContentLoaded", function () {
     renderImages();
   } else {
     console.warn("No images found for this post.");
+  }
+
+  // Handle details animation and button rotation
+  const details = document.querySelector(".details-text-posts");
+  const summaryBtn = document.querySelector(".summary-btn");
+  const section = document.querySelector(".section-text-posts");
+
+  if (details && summaryBtn && section) {
+    details.addEventListener("toggle", () => {
+      if (details.open) {
+        // Opening state
+        details.classList.add("open");
+        details.classList.remove("close");
+        summaryBtn.classList.add("rotate");
+        section.classList.add("open");
+        section.classList.remove("close");
+      } else {
+        // Closing state
+        section.classList.add("close");
+        section.classList.remove("open");
+        summaryBtn.classList.remove("rotate");
+      }
+    });
   }
 });

@@ -13,7 +13,9 @@ layout: layout.html
 </section>
 <details class="details-text-posts">
 <summary>
-  <div class="summary-text-posts"></div>
+  <div class="summary-text-posts">
+    <p class="summary-btn">?</p>
+  </div>
 </summary>
 <section class="section-text-posts">
     <h1 class="text-subpage title-subpage">{{ title }}</h1>
