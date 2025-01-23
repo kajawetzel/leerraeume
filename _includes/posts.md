@@ -11,7 +11,10 @@ layout: layout.html
     <button class="btn btn-right">→</button>
 </div>
 </section>
-<div class="pre-title"></div>
+<details class="details-text-posts">
+<summary>
+  <div class="summary-text-posts"></div>
+</summary>
 <section class="section-text-posts">
     <h1 class="text-subpage title-subpage">{{ title }}</h1>
     <div class="container-text-posts">
@@ -22,6 +25,8 @@ layout: layout.html
         {{ description }}</p>
     </div>
 </section> 
+</details>
+
 <a href="/index.html" class="container-link-landing-page">
 <div class="link-landing-page"></div>
 <div class="link-landing-page"></div>
