@@ -18,7 +18,9 @@ layout: layout.html
             <label for="file" class="btn-upload-file">Bilder hochladen</label><br>
             <input type="file" id="file" name="file" accept="image/*" multiple required><br>
         </div>
+        <div class="btn-submit-container">
         <button class="btn-submit" type="submit" value="Send Message">Einreichen</button>
+        </div>
     </form>
     </div>
 </section>
