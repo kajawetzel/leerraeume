@@ -24,9 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetUrl = link.getAttribute("href"); // Ziel-URL speichern
       const image = link.querySelector("img"); // Bild im Link finden
 
-      // Debug-Ausgabe
-      console.log("Ziel-URL:", targetUrl);
-
       // Animation hinzufügen
       image.classList.add("transition");
 
@@ -37,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           console.error("Fehler: Ziel-URL konnte nicht gelesen werden.");
         }
-      }, 800); // Animationsdauer: 0.8s
+      }, 800);
     });
   });
 
@@ -57,15 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
         menu.classList.add("move-up"); // Klasse für Animation hinzufügen
       }
 
-      // Nach der Animationsdauer zur Zielseite navigieren
-      const animationDuration = 1000; // Dauer der CSS-Animation in Millisekunden
+      const animationDuration = 1000; 
       setTimeout(() => {
         if (targetUrl) {
-          window.location.href = targetUrl; // Weiterleitung zur Zielseite
+          window.location.href = targetUrl;
         } else {
           console.error("Fehler: Ziel-URL konnte nicht gelesen werden.");
         }
-      }, animationDuration); // Weiterleitung verzögern
+      }, animationDuration);
     });
   }
 });

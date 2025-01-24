@@ -92,13 +92,6 @@ strong{
 img:hover {
   filter: none;
   filter: brightness(1.2);
-  /*
-  height: 74vh;
-  margin-top: -10px;
-  z-index: 100;
-  transform: scale(1.1);
-  margin-top: 15px;
-  */
 }
 
 .container-img {
@@ -461,7 +454,7 @@ details.close .section-text-posts {
   }
 }
 
-.title-subpage{
+.title-subpage {
   font-family: Font1;
   font-size: 3.5rem;
   hyphens: auto;
@@ -469,7 +462,7 @@ details.close .section-text-posts {
   text-shadow: 2px 1px var(--color3);
 }
 
-.description-text-subpage{
+.description-text-subpage {
   padding-top: 1rem;
   line-height: 1.1;
   color: var(--color1);
@@ -479,7 +472,7 @@ details.close .section-text-posts {
   text-shadow: none;
 }
 
-.details-text-subpage{
+.details-text-subpage {
   font-size: 1rem;
 }
 
@@ -728,6 +721,16 @@ label{
   justify-content: flex-end;
   margin-top: 20px;
   align-items: center;
+  animation: move-up-inside-success 1.2s ease-in-out forwards;
+}
+@keyframes move-up-inside-success {
+  0% {
+    transform: translateY(100vh);
+    }
+
+  100% {
+    transform: translateY(0vh);
+  }
 }
 
 .container-success{
@@ -743,6 +746,7 @@ label{
   margin-bottom: -20px;
   font-family: Font1;
 }
+
 
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
