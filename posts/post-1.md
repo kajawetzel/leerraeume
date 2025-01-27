@@ -4,9 +4,9 @@ layout: posts.md
 slug: "kornhaus-engen"
 ort: "Engen"
 plz: "78234"
-preview-image: "/assets/images/post-1-img/post-1-img-1.jpg"
+preview-image: "/assets/images/post-1-img/post-1-img-1-1.jpg"
 images: 
-  - "/assets/images/post-1-img/post-1-img-1.jpg"
+  - "/assets/images/post-1-img/post-1-img-1-1.jpg"
   - "/assets/images/post-1-img/post-1-img-2.jpg"
   - "/assets/images/post-1-img/post-1-img-3.jpg"
   - "/assets/images/post-1-img/post-1-img-4.jpg"

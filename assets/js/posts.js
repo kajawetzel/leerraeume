@@ -43,27 +43,41 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.warn("No images found for this post.");
   }
+// Select the button, section, summary button, and the second image
+const button = document.querySelector('.details-text-posts');
+const section = document.querySelector('.section-text-posts');
+const summaryBtn = button.querySelector('.summary-btn'); // Target the element to rotate
+const firstImage = document.querySelector('.img-posts:nth-of-type(2)'); // Correct selector for the second image
 
-  // Handle details animation and button rotation
-  const details = document.querySelector(".details-text-posts");
-  const summaryBtn = document.querySelector(".summary-btn");
-  const section = document.querySelector(".section-text-posts");
-
-  if (details && summaryBtn && section) {
-    details.addEventListener("toggle", () => {
-      if (details.open) {
-        // Opening state
-        details.classList.add("open");
-        details.classList.remove("close");
-        summaryBtn.classList.add("rotate");
-        section.classList.add("open");
-        section.classList.remove("close");
-      } else {
-        // Closing state
-        section.classList.add("close");
-        section.classList.remove("open");
-        summaryBtn.classList.remove("rotate");
+// Function to toggle the section and rotate the button
+function toggleSection() {
+  if (!section.classList.contains('visible')) {
+    // Show the section and rotate the button
+    section.classList.remove('hidden');
+    section.classList.add('visible');
+    section.style.display = 'block'; // Ensure it's visible for the animation
+    summaryBtn.classList.add('rotate'); // Add the rotate class
+  } else {
+    // Hide the section and rotate the button back
+    section.classList.remove('visible');
+    section.classList.add('hidden');
+    summaryBtn.classList.remove('rotate'); // Remove the rotate class
+    section.addEventListener('animationend', () => {
+      if (section.classList.contains('hidden')) {
+        section.style.display = 'none';
       }
-    });
+    }, { once: true });
   }
+}
+
+// Add event listener to the button
+button.addEventListener('click', toggleSection);
+
+// Add event listener to the second image
+if (firstImage) {
+  firstImage.addEventListener('click', toggleSection);
+} else {
+  console.error('Second image not found!');
+}
+
 });

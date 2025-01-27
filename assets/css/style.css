@@ -367,6 +367,11 @@ img:hover {
 .container-img-posts img:nth-child(2) {
   transform: rotateY(0deg);
   opacity: 1;
+  cursor: pointer;
+  z-index: 2;
+}
+.container-img-posts img:nth-child(2):hover{
+  filter: none;
 }
 
 .container-img-posts img:nth-child(3) {
@@ -407,17 +412,12 @@ img:hover {
   font-family: Font2;
   text-shadow: 2px 1px var(--color3);
   color: var(--color2);
-  font-size: 5rem;
+  font-size: 4rem;
   transition: all 0.3s ease;
 }
 
 .summary-btn.rotate {
   transform: rotate(180deg)translateX(-16px);
-}
-
-.summary-text-posts:hover,
-.summary-text-posts:active{
-  transform: perspective(600px) rotateX(-40deg) scale(1.2);
 }
 
 /*Typo*/
@@ -432,25 +432,31 @@ img:hover {
   transform: perspective(600px) rotateY(-20deg) translateY(100vh);
   hyphens: auto;
   width: 450px;
-  transition: transform .5s ease-in-out;
 }
 
-/* Geöffneter Zustand */
-details.open .section-text-posts {
-  animation: move-up-inside .8s ease-in-out forwards;
+.section-text-posts.visible {
+  animation: move-up-inside-posts-description 0.8s ease-in-out forwards;
 }
 
-/* Geschlossener Zustand */
-details.close .section-text-posts {
-  animation: move-down-outside .8s ease-in-out forwards;
+.section-text-posts.hidden {
+  animation: move-down-outside 0.8s ease-in-out forwards;
+}
+
+@keyframes move-up-inside-posts-description {
+  0% {
+    transform: perspective(600px) rotateY(-20deg) translateY(100vh);
+  }
+  100% {
+    transform: perspective(600px) rotateY(-20deg) translateY(0);
+  }
 }
 
 @keyframes move-down-outside {
   0% {
-    transform: translateY(0); /* Start in der offenen Position */
+    transform: perspective(600px) rotateY(-20deg) translateY(0);
   }
   100% {
-    transform: translateY(100vh); /* Endposition außerhalb des Bildschirms */
+    transform: perspective(600px) rotateY(-20deg) translateY(100vh);
   }
 }
 
@@ -479,11 +485,13 @@ details.close .section-text-posts {
 /*Buttons*/
 .container-btn{
   width: 100vw;
-  height: 100vh;
+  height: 20vh;
+  top: 40vh;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
 }
 
 .btn{
