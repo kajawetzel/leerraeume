@@ -19,14 +19,10 @@ layout: layout.html
             <input type="file" id="file" name="file" accept="image/*" multiple ><br>
         </div>
         <div class="btn-submit-container">
-        <button class="btn-submit" type="submit" value="Send Message">Einreichen</button>
+        <button class="btn-submit btn-submit-1" type="submit" value="Send Message">Einreichen</button>
         </div>
     </form>
     </div>
 </section>
 
-<a href="/index.html" class="container-link-landing-page">
-<div class="link-landing-page"></div>
-<div class="link-landing-page"></div>
-<div class="link-landing-page"></div>
-</a> 
+{% include "link-landing-page.html" %}

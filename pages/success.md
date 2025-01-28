@@ -7,12 +7,9 @@ layout: layout.html
 </div>
 <section class="section-success">
 <div class="container-success">
-    <p class="text-success">Danke fürs Einreichen!</p>
+    <p class="text-success title-subpage">Danke fürs<br>Einreichen!</p>
     <a class="link-success btn-submit" href="/index.html">Zurück zur Übersicht<a>
 </div>
 </section>
-<a href="/index.html" class="container-link-landing-page">
-    <div class="link-landing-page"></div>
-    <div class="link-landing-page"></div>
-    <div class="link-landing-page"></div>
-</a> 
+
+{% include "link-landing-page.html" %}

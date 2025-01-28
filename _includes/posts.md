@@ -26,11 +26,5 @@ layout: layout.html
         {{ description }}</p>
     </div>
 </section> 
-
-
-<a href="/index.html" class="container-link-landing-page">
-<div class="link-landing-page"></div>
-<div class="link-landing-page"></div>
-<div class="link-landing-page"></div>
-</a>
+{% include "link-landing-page.html" %}
 <script src="/assets/js/posts.js"></script>

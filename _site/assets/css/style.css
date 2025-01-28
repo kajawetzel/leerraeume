@@ -135,7 +135,7 @@ img:hover {
 }
 */
 .subheading {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   hyphens: auto;
   color: var(--color2);
   text-shadow: 2px 1px var(--color3);
@@ -358,6 +358,10 @@ img:hover {
   margin-top: -5vh;
 }
 
+.container-img-posts img:hover{
+  filter: none;
+}
+
 .container-img-posts img:nth-child(1) {
   transform: rotateY(45deg);
   opacity: 0.8;
@@ -368,10 +372,11 @@ img:hover {
   transform: rotateY(0deg);
   opacity: 1;
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
 }
 .container-img-posts img:nth-child(2):hover{
   filter: none;
+  cursor: pointer;
 }
 
 .container-img-posts img:nth-child(3) {
@@ -597,12 +602,24 @@ label{
 }
 
 .container-submission{
-  transform: perspective(1200px) rotateY(-40deg);
+  transform: perspective(1200px) rotateY(-40deg) translateY(0);
   margin-top: -40px;
   animation: move-up-inside 1.2s ease-in-out forwards;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.container-submission.move-up-submission {
+  animation: container-move-up 1s ease-in-out forwards;
+}
+
+@keyframes container-move-up {
+  0% {
+    transform: perspective(1200px) rotateY(-40deg) translateY(0); /* Start in Sicht */
+  }
+  100% {
+    transform: perspective(1200px) rotateY(-40deg) translateY(-100vh); /* Ziel außerhalb des Bildschirms */
+  }
 }
 
 input,
@@ -631,6 +648,7 @@ textarea,
   width: auto;
   text-decoration: underline;
   padding: 6px;
+  margin-top: 20px;
 }
 
 input:focus, 
@@ -647,9 +665,6 @@ form{
   margin-top: -5px;
 }
 
-.btn-submit{
-  margin-top: 20px;
-}
 
 .btn-submit:hover{
   transform: scale(1.15);
@@ -708,16 +723,19 @@ label{
   left: 25px;
   transform: perspective(120px) rotateY(40deg);
   gap: 2px;
+  cursor: pointer;
 }
 
 .link-landing-page{
   width: 20px;
   height: 30px;
   background-color: var(--color2);
+  cursor: pointer;
 }
 
 .container-link-landing-page:hover{
   transform: perspective(120px) rotateY(40deg) scale(1.1);
+  cursor: pointer;
 }
 
 /*SUCCESS_PAGE_________________________________________________________________*/
@@ -744,18 +762,20 @@ label{
 .container-success{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   transform: perspective(600px) rotateY(-40deg);
   margin-right: 20px;
 }
 
 .text-success{
-  font-size: 2rem;
   margin-bottom: -20px;
   font-family: Font1;
+  line-height: 1;
 }
 
-
+.link-success{
+  margin-top: 20px;
+}
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
   display: none;
