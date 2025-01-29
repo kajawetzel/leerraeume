@@ -11,5 +11,4 @@ layout: layout.html
     <a class="link-success btn-submit" href="/index.html">Zurück zur Übersicht<a>
 </div>
 </section>
-
 {% include "link-landing-page.html" %}

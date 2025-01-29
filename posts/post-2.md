@@ -1,10 +1,11 @@
 ---
-title: "Metzgerei Mayer"
+title: "Metz-<br>gerei Mayer"
 layout: posts.md
 slug: "metzgerei-mayer-engen"
 ort: "Engen"
 plz: "78234"
 preview-image: "/assets/images/post-2-img/jpg/post-2-img-1.jpg"
+alt-text-preview-image: "Ein zweistöckiges rötliches Gebäude in einer Altstadt. Eine Treppe führt zu einer Glastür die etwas nach innen gesetzt ist, zwischen den beiden Schaufenstern. Die Jalousie versperrt die Sicht nach innen in den Schaufenstern, innen gegen die Eingangtür sind Spanplatten gelehnt. Über dem Laden ist eine Wohnung."
 images: 
   - "/assets/images/post-2-img/jpg/post-2-img-1.jpg"
   - "/assets/images/post-2-img/jpg/post-2-img-2.jpg"

@@ -5,6 +5,7 @@ slug: "kornhaus-engen"
 ort: "Engen"
 plz: "78234"
 preview-image: "/assets/images/post-1-img/post-1-img-1-1.jpg"
+alt-text-preview-image: "Ein altes Haus, welches scheunenähnlich ist und ein treppenartiges Dach hat."
 images: 
   - "/assets/images/post-1-img/post-1-img-1-1.jpg"
   - "/assets/images/post-1-img/post-1-img-2.jpg"

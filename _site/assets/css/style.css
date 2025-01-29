@@ -37,7 +37,7 @@ h1, h2, p {
 h1 {
   font-size: 5.5rem;
   text-transform: none;
-  font-family: Font1;
+  font-family: Hans-Sachs-Gotisch, cursive;
   line-height: 1;
   letter-spacing: 0.1rem;
 }
@@ -46,12 +46,12 @@ h2 {
   margin-left: 2rem;
   font-size: 1rem;
   line-height: 1;
-  font-family: Font2;
+  font-family: Baskervville, Garamond, serif;
 }
 
 p {
 font-size: 1.1rem;
-font-family: Font2;
+font-family: Baskervville, Garamond, serif;
 padding: 5px;
 hyphens: auto;
 line-height: 1.25;
@@ -59,7 +59,8 @@ letter-spacing: -.02rem;
 }
 
 strong{
-  font-family: Font3;
+  font-family: Baskervville, Garamond, serif;
+  font-style: italic;
   font-weight: normal;
 }
 /*LANDING PAGE_________________________________________________________________*/
@@ -148,7 +149,7 @@ img:hover {
 
 .link-submit {
   text-decoration: underline;
-  font-family: Font2;
+  font-family: Baskervville, Garamond, serif;
   background-color: var(--color2);
   color: var(--color1);
   border: 2px outset var(--color2);
@@ -195,152 +196,8 @@ img:hover {
 .menu.move-up {
   animation: move-up-outside 1s ease-in-out forwards;
 }
-
-/*
-.menu:hover .link-submit{
-  display: block;
-}
-*/
-/*MEDIA QUERIES landing page*/
-/*
-@media only screen and (max-width: 1200px) {
-  .menu{
-    width: 25vw;
-  }
-}
-
-@media only screen and (max-width: 1080px) {
-  .menu{
-    width: 27vw;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .menu{
-    width: 29vw;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .menu{
-    width: 31vw;
-  }
-
-  h2{
-    font-size: 0.7rem;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .menu{
-    width: 34vw;
-    bottom:16vh;
-  }
-
-  h1{
-    font-size: 2.8rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .menu{
-    width: 35vw;
-    bottom: 16vh;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .menu{
-    transform: none;
-    bottom: 8vh;
-    left: 30px;
-    width: 70vw;
-  }
-
-  .menu:hover{
-    right: 50px;
-    transform: none;  
-  }
-
-  h1{
-    font-size: 5.5rem;
-  }
-
-  .subheading{
-    font-size: 1.3rem;
-    line-height: 1.1;
-    margin-top: -0.5rem;
-  }
-
-  .link-submit{
-    display: block;
-    padding-top: 1rem;
-  }
-
-  .carousel{
-    animation: scroll-carousel 5s linear infinite;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .menu{
-    width: 60vw;
-    right: 120px;
-  }
-
-  .menu:hover{
-    right: 120px;
-  }
-
-  h1{
-    font-size: 5rem;
-  }
-
-  .subheading{
-    font-size: 1.1rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .menu{
-    width: 60vw;
-  }
-
-  h1{
-    font-size: 4rem;
-  }
-
-  .subheading{
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  h1{
-    font-size: 3.3rem;
-  }
-
-  .menu{
-    width: 80vw;
-    right: 5vw;
-  }
-
-  .menu:hover{
-    right: 5vw;
-  }
-
-  .subheading{
-    font-size: 1.1rem;
-    line-height: 1.1;
-    padding-top: 7px;
-  }
-
-  .link-submit{
-    padding-top: 14px;
-  }
-}*/
 /*SUBPAGES_____________________________________________________________________________________________-*/
-/*POSTS________________________________________________________________*/
+/*POSTS________________________*/
 /*Images*/
 .img-posts {
   height: 80vh;
@@ -414,7 +271,7 @@ img:hover {
 }
 
 .summary-btn{
-  font-family: Font2;
+  font-family: Baskervville, Garamond, serif;
   text-shadow: 2px 1px var(--color3);
   color: var(--color2);
   font-size: 4rem;
@@ -466,11 +323,14 @@ img:hover {
 }
 
 .title-subpage {
-  font-family: Font1;
+  font-family: Hans-Sachs-Gotisch, cursive;
   font-size: 3.5rem;
   hyphens: auto;
-  margin-bottom: 7px;
   text-shadow: 2px 1px var(--color3);
+}
+
+.container-text-posts{
+  margin-top: 12px;
 }
 
 .description-text-subpage {
@@ -506,7 +366,7 @@ img:hover {
   border: none;
   z-index: 100;
   font-size: 3rem;
-  font-family: Font2;
+  font-family: Baskervville, Garamond, serif;
   text-shadow: 1px 2px var(--color3);
   cursor: pointer;
 }
@@ -585,10 +445,10 @@ img:hover {
 }
 /*EINREICHEN_________________________________________________________________*/
 label{
-  font-family: Font2;
+  font-family: Baskervville, Garamond, serif;
 }
 
-#section-submission{
+#section-submission {
   position: absolute;
   padding: 15px;
   display: flex;
@@ -601,7 +461,7 @@ label{
   overflow-x: auto;
 }
 
-.container-submission{
+.container-submission {
   transform: perspective(1200px) rotateY(-40deg) translateY(0);
   margin-top: -40px;
   animation: move-up-inside 1.2s ease-in-out forwards;
@@ -634,7 +494,7 @@ textarea,
   background-color: var(--color2);
   border: 3px outset var(--color2);
   color: var(--color1);
-  font-family: Font2;
+  font-family: Baskervville, Garamond, serif;
   width: 400px;
 }
 
@@ -769,7 +629,7 @@ label{
 
 .text-success{
   margin-bottom: -20px;
-  font-family: Font1;
+  font-family: Hans-Sachs-Gotisch, cursive;
   line-height: 1;
 }
 

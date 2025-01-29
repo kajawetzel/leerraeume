@@ -17,7 +17,8 @@ layout: layout.html
   </div>
 </button>
 <section class="section-text-posts">
-    <h1 class="text-subpage title-subpage">{{ title }}</h1>
+    <h1 class="text-subpage title-subpage">
+      {{ title }}
     <div class="container-text-posts">
         <p class="text-subpage details-text-subpage description-text-subpage">
         <strong>

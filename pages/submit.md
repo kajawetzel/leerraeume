@@ -24,5 +24,4 @@ layout: layout.html
     </form>
     </div>
 </section>
-
 {% include "link-landing-page.html" %}

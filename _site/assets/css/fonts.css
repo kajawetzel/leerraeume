@@ -1,15 +1,16 @@
 @font-face {
-    font-family: Font1;
+    font-family: Hans-Sachs-Gotisch;
     src: url(../fonts/Hanssachsgotisch-2Orv.woff2)
 }
 
 @font-face {
-    font-family: Font2;
-    src: url(../fonts/Baskervville-Regular.woff2)
+    font-family: Baskervville;
+    src: url(../fonts/Baskervville-Regular.woff2);
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Font3;
-    src: url(../fonts/Baskervville-Italic.woff2)
+    font-family: Baskervville;
+    src: url(../fonts/Baskervville-Italic.woff2);
+    font-style: italic;
 }
-
