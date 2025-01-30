@@ -14,3 +14,11 @@
     src: url(../fonts/Baskervville-Italic.woff2);
     font-style: italic;
 }
+
+@font-face {
+    font-family: OpenArrow;
+    src: url(../fonts/OpenArrow-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+2190-21ff;
+}

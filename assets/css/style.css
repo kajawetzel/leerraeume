@@ -121,20 +121,14 @@ img:hover {
   z-index: 5;
   transform: perspective(1200px) rotateY(-40deg);
   width: 480px;
-  /*
-  transform: perspective(150px) rotateX(70deg) rotateZ(-60deg);
-  width: 22vw;*/
-}
-/*
-.menu:hover {
-  transform: perspective(0px) scale(150%);
-  right: 150px;
 }
 
-.menu-item:hover {
-  font-size: 1.5rem;
+@media only screen and (max-width: 480px) {
+  .menu{
+    margin-right: -18px;
+  }
 }
-*/
+
 .subheading {
   font-size: 1.4rem;
   hyphens: auto;
@@ -148,7 +142,6 @@ img:hover {
 }
 
 .link-submit {
-  text-decoration: underline;
   font-family: Baskervville, Garamond, serif;
   background-color: var(--color2);
   color: var(--color1);
@@ -326,7 +319,6 @@ img:hover {
   font-family: Hans-Sachs-Gotisch, cursive;
   font-size: 3.5rem;
   hyphens: auto;
-  text-shadow: 2px 1px var(--color3);
 }
 
 .container-text-posts{
@@ -360,15 +352,15 @@ img:hover {
 }
 
 .btn{
-  margin: 50px;
+  margin: 30px;
   color: var(--color2);
   background-color: transparent;
   border: none;
   z-index: 100;
   font-size: 3rem;
-  font-family: Baskervville, Garamond, serif;
+  font-family: Baskervville;
   text-shadow: 1px 2px var(--color3);
-  cursor: pointer;
+  cursor: pointer;;
 }
 
 .btn:hover{
@@ -423,10 +415,6 @@ img:hover {
 
   .btn:hover{
     transform: scale(1.4);
-  }
-
-  .text-subpage{
-    text-shadow: 2px 2px 10px var(--color3)
   }
   
   h2{
@@ -488,7 +476,6 @@ textarea,
   border-radius: 0;
   line-height: 1.1;
   font-size: 1.1rem;
-  background-color: transparent;
   color: var(--color2);
   padding: 2px;
   background-color: var(--color2);
@@ -506,7 +493,6 @@ textarea,
 
 .btn-submit{
   width: auto;
-  text-decoration: underline;
   padding: 6px;
   margin-top: 20px;
 }
