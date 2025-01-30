@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  pointer-events: auto;
 }
 
 :root {
@@ -40,6 +41,7 @@ h1 {
   font-family: Hans-Sachs-Gotisch, cursive;
   line-height: 1;
   letter-spacing: 0.1rem;
+  
 }
 
 h2 {
@@ -54,7 +56,7 @@ font-size: 1.1rem;
 font-family: Baskervville, Garamond, serif;
 padding: 5px;
 hyphens: auto;
-line-height: 1.25;
+line-height: 1.2;
 letter-spacing: -.02rem;
 }
 
@@ -145,7 +147,7 @@ img:hover {
   font-family: Baskervville, Garamond, serif;
   background-color: var(--color2);
   color: var(--color1);
-  border: 2px outset var(--color2);
+  border: 1px solid var(--color1);
   width: auto;
   padding: 5px;
   margin-top: -20px;
@@ -224,6 +226,7 @@ img:hover {
   cursor: pointer;
   z-index: 10;
 }
+
 .container-img-posts img:nth-child(2):hover{
   filter: none;
   cursor: pointer;
@@ -327,11 +330,10 @@ img:hover {
 
 .description-text-subpage {
   padding-top: 1rem;
-  line-height: 1.1;
   color: var(--color1);
   background-color: var(--color2);
-  padding: 5px;
-  border: 2px outset var(--color2);
+  padding: 7px;
+  border: 1px solid var(--color1);
   text-shadow: none;
 }
 
@@ -340,31 +342,26 @@ img:hover {
 }
 
 /*Buttons*/
-.container-btn{
-  width: 100vw;
-  height: 20vh;
-  top: 40vh;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 0;
-}
-
 .btn{
   margin: 30px;
   color: var(--color2);
   background-color: transparent;
   border: none;
-  z-index: 100;
   font-size: 3rem;
   font-family: Baskervville;
   text-shadow: 1px 2px var(--color3);
-  cursor: pointer;;
+  cursor: pointer;
+  position: fixed;
+  top: 42vh;
+}
+
+.btn-right{
+  right: 0;
 }
 
 .btn:hover{
   transform: scale(1.5);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 680px) {
@@ -477,9 +474,9 @@ textarea,
   line-height: 1.1;
   font-size: 1.1rem;
   color: var(--color2);
-  padding: 2px;
+  padding: 5px;
   background-color: var(--color2);
-  border: 3px outset var(--color2);
+  border: 1px solid var(--color1);
   color: var(--color1);
   font-family: Baskervville, Garamond, serif;
   width: 400px;
@@ -508,7 +505,7 @@ textarea:hover,
 }
 
 form{
-  margin-top: -5px;
+  margin-top: 5px;
 }
 
 
@@ -528,7 +525,7 @@ form{
   text-align: left;
   margin-top: 30px;
   background-color: var(--color2);
-  border: 2px outset var(--color2);
+border: 1px solid var(--color1);
 }
 
 input::placeholder,

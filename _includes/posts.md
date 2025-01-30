@@ -6,10 +6,8 @@ layout: layout.html
     class="container-img-posts scrollable" 
     data-images='{{ images | jsonify }}'>
   </div>
-<div class="container-btn">
     <button class="btn btn-left">◄</button>
     <button class="btn btn-right">►</button>
-</div>
 </section>
 <button class="details-text-posts">
   <div class="summary-text-posts">
