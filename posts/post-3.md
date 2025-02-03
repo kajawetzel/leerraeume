@@ -1,6 +1,5 @@
 ---
 title: "Gold-<br>schmiede Lang"
-layout: posts.md
 slug: "golschmiede-lang-engen"
 ort: "Engen"
 plz: "78234"

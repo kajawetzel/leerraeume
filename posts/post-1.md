@@ -1,6 +1,5 @@
 ---
 title: "Kornhaus"
-layout: posts.md
 slug: "kornhaus-engen"
 ort: "Engen"
 plz: "78234"

@@ -1,0 +1,34 @@
+---
+layout: layout.html
+---
+<section class="section-img-posts">
+
+  <div class="container-img-posts scrollable" data-images='{{ images | jsonify }}'>
+    <div class="text-slide">
+      <h1>{{ title }}</h1>
+      <div>
+          <p class="text-subpage details-text-subpage description-text-subpage">
+              <strong>
+              {{ ort }}.
+              </strong>
+              {{ description }}
+          </p>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-left">◄</button>
+  <button class="btn btn-right">►</button>
+</section>
+<section class="section-text-posts">
+    <h1 class="text-subpage title-subpage">
+      {{ title }}
+    <div class="container-text-posts">
+        <p class="text-subpage details-text-subpage description-text-subpage">
+        <strong>
+        {{ ort }}.
+        </strong>
+        {{ description }}</p>
+    </div>
+</section> 
+{% include "link-landing-page.html" %}
+<script src="/assets/js/posts.js"></script>

@@ -1,6 +1,5 @@
 ---
 title: "Metz-<br>gerei Mayer"
-layout: posts.md
 slug: "metzgerei-mayer-engen"
 ort: "Engen"
 plz: "78234"

@@ -1,6 +1,5 @@
 ---
 title: "Bäckerei Waldschütz"
-layout: posts.md
 slug: "baeckerei-engen"
 ort: "Engen"
 plz: "78234"
