@@ -11,6 +11,7 @@ images:
   - "/assets/images/post-3-img/jpg/post-3-img-3.jpg"
 description: "Die Goldschmiede Lang befand sich in der Engener Altstadt. Ende 2024 wurde das Geschäft geschlossen, da der Besitzer, Herr Lang, in Rente gegangen ist. Es ist noch unklar, was damit passieren wird. Der Laden hat zwei Eingänge und ist ein Eckgeschäft."
 adress: "Hauptstraße 5"
-size: "circa 58m2"
+size: "circa 58&thinsp;m&#178;"
+created-on: "20.12.2024"
 permalink: /posts/{{ slug }}/
 ---

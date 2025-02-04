@@ -5,22 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let images = JSON.parse(container?.dataset.images || "[]");
 
-  // Find and store the text-slide div (before it's removed)
+  // Store the text-slide and add it to the end of the array
   const textSlide = document.querySelector(".text-slide");
-  images.splice(1, 0, "text-slide"); // Insert placeholder at index 1
+  textSlide.classList.add("img-posts"); // Make sure it has the same class as images
+  images.push("text-slide"); // Insert the text-slide at the end
 
   let currentIndex = 0;
   const visibleImages = 3;
 
   function renderImages() {
     if (!container) return;
-    container.innerHTML = ""; // Clear everything
+    container.innerHTML = ""; // Clear previous items
 
     for (let i = 0; i < visibleImages; i++) {
       const currentItem = images[(currentIndex + i) % images.length];
 
       if (currentItem === "text-slide") {
-        // Clone textSlide so it's not lost from the DOM
         const textDivClone = textSlide.cloneNode(true);
         container.appendChild(textDivClone);
       } else {
@@ -31,21 +31,26 @@ document.addEventListener("DOMContentLoaded", function () {
         container.appendChild(img);
       }
     }
+
+    applyNthChildStyles();
   }
 
-  if (btnLeft) {
-    btnLeft.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      renderImages();
+  function applyNthChildStyles() {
+    const items = container.querySelectorAll(".img-posts");
+    items.forEach((item, index) => {
+      item.style.display = index >= 3 ? "none" : "block"; // Only show first 3 items
     });
   }
 
-  if (btnRight) {
-    btnRight.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      renderImages();
-    });
-  }
+  btnLeft.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    renderImages();
+  });
+
+  btnRight.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    renderImages();
+  });
 
   if (images.length > 0) {
     renderImages();

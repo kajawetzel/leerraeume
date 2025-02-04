@@ -2,20 +2,27 @@
 layout: layout.html
 ---
 <section class="section-img-posts">
-
   <div class="container-img-posts scrollable" data-images='{{ images | jsonify }}'>
-    <div class="text-slide">
-      <h1>{{ title }}</h1>
-      <div>
-          <p class="text-subpage details-text-subpage description-text-subpage">
-              <strong>
-              {{ ort }}.
-              </strong>
+    <div class="img-posts text-slide">
+      <h1 class="title-subpage">{{ title }}</h1>
+      <p class="subtitle-subpage">
+          {{ adress }} ―
+          {{ plz }} {{ ort }}
+      </p>
+      <div class="description-text-subpage">
+          <p>
               {{ description }}
           </p>
-          <p>{{ adress }}</p>
-          <p>{{ construction-date }}</p>
-          <p>{{ size }}</p>
+          <p>
+            {{ construction-date }}
+          </p>
+          <p>
+            {{ size }}
+          </p>
+          <div class="description-footer">
+              <div class="line-footer"></div>
+              <p class="text-footer">Eintrag vom {{ created-on }}</p>
+          </div>
       </div>
     </div>
   </div>

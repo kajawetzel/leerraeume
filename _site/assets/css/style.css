@@ -7,8 +7,10 @@
 
 :root {
   --color1: #000000;
-  --color2: #e0dada;
+  --color2: #ebeae8;
   --color3: rgb(123, 123, 123);
+  --font1: Hamlet Tertia;
+  --font2: Hamlet Cicero;
 }
 
 html {
@@ -35,34 +37,42 @@ h1, h2, p {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 5.2rem;
   text-transform: none;
-  font-family: Hans-Sachs-Gotisch, cursive;
-  line-height: 1;
-  letter-spacing: 0.1rem;
-  text-transform:uppercase;
+  font-family: var(--font1), cursive;
+  line-height: 0.95;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {
   margin-left: 2rem;
   font-size: 1rem;
   line-height: 1;
-  font-family: Baskervville, Garamond, serif;
+  font-family: var(--font1), Garamond, serif;
 }
 
 p {
 font-size: 1.1rem;
-font-family: Baskervville, Garamond, serif;
+font-family: var(--font1), Garamond, serif;
 padding: 5px;
 hyphens: auto;
 line-height: 1.2;
-letter-spacing: -.02rem;
+letter-spacing: -0.01rem;
 }
 
 strong{
-  font-family: Baskervville, Garamond, serif;
-  font-style: italic;
-  font-weight: normal;
+  font-family: var(--font1), Garamond, serif;
+  font-variant: small-caps;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+}
+span{
+  font-family: var(--font2);
+  display: block;
+  font-size: 180%;
+  margin: -3px;
 }
 /*LANDING PAGE_________________________________________________________________*/
 .section-gallery {
@@ -121,7 +131,7 @@ img:hover {
   right: 0px;
   z-index: 5;
   transform: perspective(1200px) rotateY(-40deg);
-  width: 480px;
+  width: 500px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -140,10 +150,11 @@ img:hover {
   padding: 20px;
   margin-bottom: 18px;
   text-align: center;
+  font-family: var(--font1);
 }
 
 .link-submit {
-  font-family: Baskervville, Garamond, serif;
+  font-family: var(--font1), Garamond, serif;
   background-color: var(--color2);
   color: var(--color1);
   border: 1px solid var(--color1);
@@ -213,27 +224,24 @@ img:hover {
   filter: none;
 }
 
-.container-img-posts img:nth-child(1) {
+.container-img-posts .img-posts:nth-child(1) {
   transform: rotateY(45deg);
-  opacity: 0.8;
+  opacity: 0.7;
   transform-origin: center right;
 }
 
-.container-img-posts img:nth-child(2) {
+.container-img-posts .img-posts:nth-child(2) {
   transform: rotateY(0deg);
   opacity: 1;
-  cursor: pointer;
-  z-index: 10;
 }
 
-.container-img-posts img:nth-child(2):hover{
+.container-img-posts .img-posts:nth-child(2):hover{
   filter: none;
-  cursor: pointer;
 }
 
-.container-img-posts img:nth-child(3) {
+.container-img-posts .img-posts:nth-child(3) {
   transform: rotateY(-45deg);
-  opacity: 0.8;
+  opacity: 0.7;
   transform-origin: center left;
 }
 
@@ -260,27 +268,54 @@ img:hover {
   background-color: var(--color2);
   height: 80vh;
   min-width: 50vw;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-subpage {
-  font-family: Hans-Sachs-Gotisch, cursive;
   hyphens: auto;
   color: var(--color1);
+  padding-top: 15px;
+  font-size: 4rem;
 }
 
-.container-text-posts{
-  margin-top: 12px;
+.subtitle-subpage{
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
 }
 
 .description-text-subpage {
-  padding-top: 1rem;
   color: var(--color1);
-  padding: 7px;
+  padding: 40px;
+  padding-top: 0;
   text-shadow: none;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
 }
 
-.details-text-subpage {
-  font-size: 1rem;
+.description-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.text-footer{
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.line-footer{
+  width: 45%;
+  height: 1px;
+  background-color: var(--color1);
 }
 
 /*Buttons*/
@@ -290,7 +325,7 @@ img:hover {
   background-color: transparent;
   border: none;
   font-size: 3rem;
-  font-family: Baskervville;
+  font-family: var(--font1);
   cursor: pointer;
   position: fixed;
   top: 42vh;
@@ -304,9 +339,13 @@ img:hover {
   transform: scale(1.5);
   cursor: pointer;
 }
-/*
+
 @media only screen and (max-width: 680px) {
   .img-posts {
+    height: 60vh;
+  }
+
+  .text-slide{
     height: 60vh;
   }
 
@@ -321,9 +360,10 @@ img:hover {
 @media only screen and (max-width: 576px) {
   .title-subpage{
     font-size: 3.7rem;
+
   }
 
-  .details-text-subpage{
+  .description-text-subpage{
     font-size: 0.9rem;
     line-height: 1.1;
   }
@@ -343,7 +383,7 @@ img:hover {
     left: 14vw;
   }
 
-  .details-text-subpage{
+  .description-text-subpage{
     font-size: 0.9rem;
   }
 
@@ -369,10 +409,10 @@ img:hover {
     top: 10vh;
   }
 }
-  */
+
 /*EINREICHEN_________________________________________________________________*/
 label{
-  font-family: Baskervville, Garamond, serif;
+  font-family: var(--font1), Garamond, serif;
 }
 
 #section-submission {
@@ -420,7 +460,7 @@ textarea,
   background-color: var(--color2);
   border: 1px solid var(--color1);
   color: var(--color1);
-  font-family: Baskervville, Garamond, serif;
+  font-family: var(--font1), Garamond, serif;
   width: 400px;
 }
 
@@ -554,7 +594,7 @@ label{
 
 .text-success{
   margin-bottom: -20px;
-  font-family: Hans-Sachs-Gotisch, cursive;
+  font-family: var(--font1), cursive;
   line-height: 1;
 }
 

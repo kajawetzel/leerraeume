@@ -1,16 +1,15 @@
 @font-face {
-    font-family: Hans-Sachs-Gotisch;
+    font-family: Hamlet Tertia;
     src: url(/assets/fonts/Hamlet-Tertia18.woff2);
 }
-
+/*
 @font-face {
-    font-family: Baskervville;
+    font-family: Font3;
     src: url(/assets/fonts/Hamlet-Tertia18.woff2);
     font-style: normal;
 }
-
+*/
 @font-face {
-    font-family: Baskervville;
+    font-family: Hamlet Cicero;
     src: url(/assets/fonts/Hamlet-Cicero12.woff2);
-    font-style: italic;
 }
