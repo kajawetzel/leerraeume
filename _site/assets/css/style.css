@@ -37,20 +37,13 @@ h1, h2, p {
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 4rem;
   text-transform: none;
   font-family: var(--font1), cursive;
   line-height: 0.95;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   text-align: center;
-}
-
-h2 {
-  margin-left: 2rem;
-  font-size: 1rem;
-  line-height: 1;
-  font-family: var(--font1), Garamond, serif;
 }
 
 p {
@@ -63,16 +56,19 @@ letter-spacing: -0.01rem;
 }
 
 strong{
-  font-family: var(--font1), Garamond, serif;
-  font-variant: small-caps;
-  letter-spacing: 0.1rem;
-  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  font-size: 2rem;
 }
 span{
   font-family: var(--font2);
   display: block;
   font-size: 180%;
   margin: -3px;
+  letter-spacing: 1.2px;
+}
+
+img{
+  filter: sepia(0.2) hue-rotate(-5deg);
 }
 /*LANDING PAGE_________________________________________________________________*/
 .section-gallery {
@@ -97,13 +93,11 @@ span{
 
 .carousel-item {
   height: 70vh;
-  filter: sepia(0.2) hue-rotate(-5deg);
   transition: transform 0.2s ease, filter 0.5s ease;
 }
 
-img:hover {
-  filter: none;
-  filter: brightness(1.2);
+.carousel-item:hover {
+  filter: sepia(0.2) hue-rotate(-5deg) brightness(1.2);
 }
 
 .container-img {
@@ -131,7 +125,10 @@ img:hover {
   right: 0px;
   z-index: 5;
   transform: perspective(1200px) rotateY(-40deg);
-  width: 500px;
+  width: 450px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  background-color: var(--color1);
 }
 
 @media only screen and (max-width: 480px) {
@@ -140,17 +137,20 @@ img:hover {
   }
 }
 
+.heading{
+  color: var(--color2)
+}
+
 .subheading {
   font-size: 1.4rem;
   hyphens: auto;
   color: var(--color2);
-  text-shadow: 2px 1px var(--color1);
-  line-height: 0.93;
-  margin-top: -30px;
+  line-height: 1.1;
+  margin-top: -10px;
   padding: 20px;
   margin-bottom: 18px;
   text-align: center;
-  font-family: var(--font1);
+
 }
 
 .link-submit {
@@ -217,11 +217,7 @@ img:hover {
   height: 100vh;
   perspective: 700px;
   gap: 3px;
-  margin-top: -5vh;
-}
-
-.container-img-posts img:hover{
-  filter: none;
+  margin-top: -3vh;
 }
 
 .container-img-posts .img-posts:nth-child(1) {
@@ -233,10 +229,6 @@ img:hover {
 .container-img-posts .img-posts:nth-child(2) {
   transform: rotateY(0deg);
   opacity: 1;
-}
-
-.container-img-posts .img-posts:nth-child(2):hover{
-  filter: none;
 }
 
 .container-img-posts .img-posts:nth-child(3) {
@@ -269,51 +261,54 @@ img:hover {
   height: 80vh;
   min-width: 50vw;
   max-width: 80vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .title-subpage {
   hyphens: auto;
   color: var(--color1);
-  padding-top: 15px;
-  font-size: 4rem;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .subtitle-subpage{
   text-align: center;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
+  padding-bottom: 30px;
 }
 
 .description-text-subpage {
   color: var(--color1);
-  padding: 40px;
+  padding-right: 15%;
+  padding-left: 15%;
   padding-top: 0;
   text-shadow: none;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
   text-align: center;
 }
 
 .description-footer{
+  position: absolute;
+  bottom: 0;  /* Positions it at the bottom */
+  left: 50%;
+  transform: translateX(-50%);  /* Centers it horizontally */
+  width: 100%; /* Ensures it spans the full width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
+  padding-bottom: 8px; /* Add some spacing from the edge */
 }
 
 .text-footer{
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
+  padding-top: 8px;
 }
 
 .line-footer{
-  width: 45%;
+  width: 60%;
   height: 1px;
   background-color: var(--color1);
 }
@@ -507,7 +502,7 @@ form{
   text-align: left;
   margin-top: 30px;
   background-color: var(--color2);
-border: 1px solid var(--color1);
+  border: 1px solid var(--color1);
 }
 
 input::placeholder,
