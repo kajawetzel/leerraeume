@@ -11,9 +11,11 @@ images:
   - "/assets/images/post-4-img/jpg/post-4-img-3.jpg"
   - "/assets/images/post-4-img/jpg/post-4-img-4.jpg"
   - "/assets/images/post-4-img/jpg/post-4-img-5.jpg"
-description: "Für eine lange Zeit war die Bäckerei Waldschütz hier dir. <br>Die Filiale wurde 1939 aufgemacht und schloss 2023. Danach gab es noch eine andere Bäckerei darin, die nun aber schon wieder geschlossen hat. <span>Mitten in der Altstadt</span> wird die Fläche nun zur Miete angeboten, aber scheinbar hat sich noch niemand gefunden, der darin wieder etwas eröffnen möchte. <span>Der Laden ist fast leer,</span> nur eine Spüle befindet sich noch darin."
+description: "<p>Für eine lange Zeit war die Bäckerei und Konditorei Waldschütz hier dir. Die Filiale wurde 1939 aufgemacht und schloss 2023. Die Bäckerei Waldschütz war ein Familienunternehmen mit mehreren Filialen in Engen und Umgebung. Sie verkauften neben vielen verschiedenen Broten und Wecken auch süßes Teile wie Kekse, Kuchen und Torte. Wie jede gute Bäckerei hat das Gebäck äußerst kreative Namen wie „Opa Edwin Brot“, „Unser Bruno“ oder „Hegau Dinkele“. Es gab auch immer ein Regal mit kleinen Süßigkeiten wie „Center Shocks“ oder Gummiteilen.</p>
+<p>Nach der Schließung der Bäckerei Waldschütz gab es in diesem Gebäude noch eine andere Bäckerei darin, die nun aber schon wieder geschlossen hat. Mitten in der Altstadt wird die Fläche nun zur Miete angeboten, aber scheinbar hat sich noch niemand gefunden, der darin wieder etwas eröffnen möchte.</p>
+<p>Der Laden wurde komplett leergeräumt, nur eine Spüle befindet sich noch darin. Der vordere Teil wird durch das Schaufenster, die Glastür und die kleinen Fenster vorne lichtdurchflutet.</p>"
 adress: "Klostergasse 2"
-size: "circa 60&thinsp;m&#178;"
+size: "60&thinsp;m&#178;"
 created-on: "20.12.2024"
 permalink: /posts/{{ slug }}/
 ---

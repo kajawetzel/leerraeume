@@ -37,7 +37,7 @@ h1, h2, p {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: none;
   font-family: var(--font1), cursive;
   line-height: 0.95;
@@ -56,8 +56,8 @@ letter-spacing: -0.01rem;
 }
 
 strong{
-  letter-spacing: 0.15rem;
-  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
 }
 span{
   font-family: var(--font2);
@@ -103,7 +103,7 @@ img{
 .container-img {
   position: relative;
   transition: transform 0.5s ease, z-index 0.5s ease;
-  margin: -12px;
+  margin: -15px;
   z-index: 0;
 }
 
@@ -128,7 +128,7 @@ img{
   width: 450px;
   padding-top: 20px;
   padding-bottom: 15px;
-  background-color: var(--color1);
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -138,19 +138,23 @@ img{
 }
 
 .heading{
-  color: var(--color2)
+  color: var(--color1);
+  background-color: var(--color2);
+  padding-top: 8px;
+  padding-right: 2px;
+  padding-left: 4px;
+  margin-bottom: -2px;
 }
 
 .subheading {
   font-size: 1.4rem;
   hyphens: auto;
   color: var(--color2);
-  line-height: 1.1;
+  line-height: 0.9;
   margin-top: -10px;
   padding: 20px;
   margin-bottom: 18px;
   text-align: center;
-
 }
 
 .link-submit {
@@ -259,58 +263,59 @@ img{
 .text-slide{
   background-color: var(--color2);
   height: 80vh;
-  min-width: 50vw;
+  min-width: 45vw;
   max-width: 80vw;
 }
 
 .title-subpage {
   hyphens: auto;
   color: var(--color1);
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .subtitle-subpage{
   text-align: center;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .description-text-subpage {
   color: var(--color1);
-  padding-right: 15%;
-  padding-left: 15%;
   padding-top: 0;
   text-shadow: none;
   font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  text-align: left;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 2px solid;
+  padding: 20px;
 }
 
+.description-text-subpage p {
+  text-indent: 30px;
+  margin:0;
+  padding:0;
+  overflow-y: scroll;
+}
+/*
 .description-footer{
-  position: absolute;
-  bottom: 0;  /* Positions it at the bottom */
-  left: 50%;
-  transform: translateX(-50%);  /* Centers it horizontally */
-  width: 100%; /* Ensures it spans the full width */
+  transform: translateX(-50%);
+  width: 100%; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 8px; /* Add some spacing from the edge */
-}
+  padding-bottom: 8px; 
+}*/
 
 .text-footer{
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
-  padding-top: 8px;
-}
-
-.line-footer{
-  width: 60%;
-  height: 1px;
-  background-color: var(--color1);
+  text-align: right;
+  padding: 0;
+  margin-right: 10px;
+  text-indent: 0;
+  line-height: 2;
 }
 
 /*Buttons*/
