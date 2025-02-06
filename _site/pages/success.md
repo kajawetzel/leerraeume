@@ -7,7 +7,7 @@ layout: layout.html
 </div>
 <section class="section-success">
 <div class="container-success">
-    <p class="text-success title-subpage">Danke fürs<br>Einreichen!</p>
+    <p class="text-success title-subpage">Danke<br>fürs Einreichen!</p>
     <a class="link-success btn-submit" href="/index.html">Zurück zur Übersicht<a>
 </div>
 </section>

@@ -7,7 +7,7 @@
 
 :root {
   --color1: #000000;
-  --color2: #ebeae8;
+  --color2: white;
   --color3: rgb(123, 123, 123);
   --font1: Hamlet Tertia;
   --font2: Hamlet Cicero;
@@ -160,7 +160,7 @@ img{
 .link-submit {
   font-family: var(--font1), Garamond, serif;
   color: var(--color2);
-  border: 2px solid var(--color2);
+  border: 5px double var(--color2);
   width: auto;
   padding: 5px;
   margin-top: 10px;
@@ -264,6 +264,8 @@ img{
   height: 80vh;
   min-width: 35vw;
   max-width: 60vw;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .title-subpage {
@@ -280,13 +282,13 @@ img{
 
 .description-text-subpage {
   color: var(--color1);
-  padding-top: 0;
+  padding-top: 7px;
   text-shadow: none;
   font-size: 1rem;
   text-align: left;
   padding-right: 30px;
   padding-left: 30px;
-
+  padding-bottom: 10px;
   /*
   column-count: 2;
   column-gap: 40px;
@@ -313,10 +315,8 @@ img{
 .text-footer{
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
-  text-align: right;
+  text-align: left;
   padding: 0;
-  margin-right: 10px;
-  text-indent: 0;
   line-height: 2;
 }
 
@@ -444,7 +444,7 @@ label{
 
 .container-submission:hover{
   cursor: pointer;
-  transform: perspective(1200px) rotateY(0deg) translateY(0) translateX(-100px);
+  transform: perspective(1200px) rotateY(0deg) translateY(0) translateX(-10px);
 }
 
 @keyframes container-move-up {
@@ -462,6 +462,7 @@ label{
 
 input,
 textarea,
+.container-img-upload,
 .btn-submit{
   border-radius: 0;
   line-height: 1.1;
@@ -469,7 +470,7 @@ textarea,
   color: var(--color2);
   padding: 5px;
   background-color: var(--color2);
-  border: 1px solid var(--color1);
+  border: none;
   color: var(--color1);
   font-family: var(--font1), Garamond, serif;
   width: 400px;
@@ -483,8 +484,13 @@ textarea,
 
 .btn-submit{
   width: auto;
-  padding: 6px;
+  padding: 3px;
   margin-top: 20px;
+  background-color: transparent;
+  color: var(--color2);
+  border: 5px double var(--color2);
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 input:focus, 
@@ -516,9 +522,9 @@ form{
 
 .container-img-upload{
   text-align: left;
-  margin-top: 30px;
-  background-color: var(--color2);
-  border: 1px solid var(--color1);
+  padding: 0;
+  padding-top: 5px;
+  margin-top: 20px;
 }
 
 input::placeholder,
@@ -606,7 +612,10 @@ label{
 .text-success{
   margin-bottom: -20px;
   font-family: var(--font1), cursive;
-  line-height: 1;
+  line-height: 0.9;
+  font-size: 3rem;
+  color: var(--color2);
+  text-align: center;
 }
 
 .link-success{
