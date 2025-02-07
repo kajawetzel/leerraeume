@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   pointer-events: auto;
+  font-feature-settings: "liga" 1, "clig" 1;
 }
 
 :root {
@@ -45,7 +46,9 @@ h1 {
   text-transform: uppercase;
   text-align: center;
 }
-
+h3{
+  color: var(--color2);
+}
 p {
 font-size: 1.1rem;
 font-family: var(--font1), Garamond, serif;
@@ -148,6 +151,24 @@ img{
   font-size: 5rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .heading{
+    font-size: 4rem;
+  }
+
+  .subheading{
+    font-size: 1rem;
+  }
+
+  span{
+    font-size: 2.5rem;
+  }
+
+  a{
+    font-size: 1rem;
+  }
+}
+
 .subheading {
   font-size: 1.5rem;
   hyphens: auto;
@@ -155,6 +176,7 @@ img{
   line-height: 0.8;
   text-align: center;
   margin-top: -10px;
+  margin-bottom: -5px;
 }
 
 .link-submit {
@@ -262,8 +284,8 @@ img{
 .text-slide{
   background-color: var(--color2);
   height: 80vh;
-  min-width: 35vw;
-  max-width: 60vw;
+  min-width: 40vw;
+  max-width: 50vw;
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -271,13 +293,18 @@ img{
 .title-subpage {
   hyphens: auto;
   color: var(--color1);
-  padding-top: 30px;
+  padding-top: 25px;
+  text-align: center;
+  margin: 10px;
 }
 
 .subtitle-subpage{
   text-align: center;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
+  hyphens: none;
+  margin: 10px;
+  line-height: 0.9;
 }
 
 .description-text-subpage {
@@ -337,78 +364,45 @@ img{
   right: 0;
 }
 
+.btn-left{
+  rotate: 180deg;
+}
+
 .btn:hover{
   transform: scale(1.5);
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .text-slide{
+    min-width: 60vw;
+  }
 }
 
 @media only screen and (max-width: 680px) {
   .img-posts {
     height: 60vh;
   }
-
-  .text-slide{
-    height: 60vh;
-  }
-
-  .section-text-posts{
-    left: 19vw;
-  }
-  .container-text-posts{
-    width: 320px;
-  }
 }
 
 @media only screen and (max-width: 576px) {
-  .title-subpage{
-    font-size: 3.7rem;
-
+  h1{
+    font-size:2.5rem;
   }
 
-  .description-text-subpage{
-    font-size: 0.9rem;
-    line-height: 1.1;
-  }
-
-  .container-text-posts{
-    width: 67vw;
+  .subtitle-subpage{
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .title-subpage{
-    font-size: 3rem;
-  }
-
-  .section-text-posts{
-    padding: 15px;
-    left: 14vw;
-  }
-
-  .description-text-subpage{
-    font-size: 0.9rem;
-  }
-
   .btn{
     margin: 20px;
   }
 
   .btn:hover{
     transform: scale(1.4);
-  }
-  
-  h2{
-    margin-left: 0;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .title-subpage{
-    font-size: 2.9rem;
-  }
-
-  .section-text-posts{
-    top: 10vh;
   }
 }
 
@@ -442,8 +436,9 @@ label{
   animation: container-move-up 1s ease-in-out forwards;
 }
 
-.container-submission:hover{
-  cursor: pointer;
+.container-submission:hover,
+.container-submission:focus,
+.container-submission:active{
   transform: perspective(1200px) rotateY(0deg) translateY(0) translateX(-10px);
 }
 
@@ -620,6 +615,12 @@ label{
 
 .link-success{
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-submit{
+    font-size: 1rem;
+  }
 }
 /*SONSTIGES_________________________________________________________________*/
 .invisible {
