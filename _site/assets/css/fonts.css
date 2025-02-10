@@ -1,15 +1,16 @@
 @font-face {
     font-family: Hamlet Tertia;
-    src: url(/assets/fonts/Hamlet-Tertia18.woff2);
+    src: url(/assets/fonts/GOUDOS.TTF);
 }
-/*
-@font-face {
-    font-family: Font3;
-    src: url(/assets/fonts/Hamlet-Tertia18.woff2);
-    font-style: normal;
-}
-*/
+
 @font-face {
     font-family: Hamlet Cicero;
-    src: url(/assets/fonts/Hamlet-Cicero12.woff2);
+    src: url(/assets/fonts/GOUDOSB.TTF);
+}
+
+
+@font-face {
+    font-family: Initials;
+    src: url(/assets/fonts/GoudyInitialen.ttf);
+    font-style: normal;
 }

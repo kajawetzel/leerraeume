@@ -12,6 +12,7 @@
   --color3: rgb(123, 123, 123);
   --font1: Hamlet Tertia;
   --font2: Hamlet Cicero;
+  --font3: Initials;
 }
 
 html {
@@ -41,21 +42,21 @@ h1 {
   font-size: 3rem;
   text-transform: none;
   font-family: var(--font1), cursive;
-  line-height: 0.95;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+  line-height: 0.85;
+  letter-spacing: -0.1;
   text-align: center;
 }
 h3{
   color: var(--color2);
 }
+
 p {
 font-size: 1.1rem;
 font-family: var(--font1), Garamond, serif;
 padding: 5px;
 hyphens: auto;
 line-height: 1.2;
-letter-spacing: -0.01rem;
+letter-spacing: -.0rem;
 }
 
 strong{
@@ -301,10 +302,11 @@ img{
 .subtitle-subpage{
   text-align: center;
   letter-spacing: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   hyphens: none;
   margin: 10px;
   line-height: 0.9;
+  font-variant: small-caps;
 }
 
 .description-text-subpage {
@@ -316,6 +318,7 @@ img{
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 10px;
+  text-indent: 100px;
   /*
   column-count: 2;
   column-gap: 40px;
@@ -324,10 +327,22 @@ img{
 }
 
 .description-text-subpage p {
-  text-indent: 30px;
   margin:0;
   padding:0;
   overflow-y: scroll;
+}
+
+.description-text-subpage :first-of-type::first-letter {
+  font-family: var(--font3);
+  font-size: 657%;
+  float: left;
+  margin-top: 3px;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.description-text-subpage :first-of-type {
+  text-indent: 0;
 }
 /*
 .description-footer{
