@@ -1,11 +1,12 @@
 @font-face {
-    font-family: Hamlet Tertia;
+    font-family: Goudy;
     src: url(/assets/fonts/GOUDOS.TTF);
 }
 
 @font-face {
-    font-family: Hamlet Cicero;
+    font-family: Goudy-bold;
     src: url(/assets/fonts/GOUDOSB.TTF);
+    font-style: bold;
 }
 
 

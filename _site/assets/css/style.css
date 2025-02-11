@@ -10,8 +10,8 @@
   --color1: #000000;
   --color2: white;
   --color3: rgb(123, 123, 123);
-  --font1: Hamlet Tertia;
-  --font2: Hamlet Cicero;
+  --font1: Goudy;
+  --font2: Goudy-bold;
   --font3: Initials;
 }
 
@@ -33,15 +33,15 @@ body {
   height: 100vh;
 }
 
-h1, h2, p {
+h1, h2 {
   color: var(--color1);
   hyphens: auto;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: none;
-  font-family: var(--font1), cursive;
+  font-family: var(--font2), cursive;
   line-height: 0.85;
   letter-spacing: -0.1;
   text-align: center;
@@ -283,7 +283,7 @@ img{
 
 /*Typo*/
 .text-slide{
-  background-color: var(--color2);
+  background-color: rgba(255, 121, 237, 0.059);
   height: 80vh;
   min-width: 40vw;
   max-width: 50vw;
@@ -291,12 +291,19 @@ img{
   scrollbar-width: none;
 }
 
+.title-subpage,
+.subtitle-subpage,
+.description-text-subpage,
+p {
+  color: rgb(255, 255, 255);
+}
+
 .title-subpage {
   hyphens: auto;
-  color: var(--color1);
   padding-top: 25px;
   text-align: center;
   margin: 10px;
+  color: rgb(255, 141, 202);
 }
 
 .subtitle-subpage{
@@ -307,10 +314,10 @@ img{
   margin: 10px;
   line-height: 0.9;
   font-variant: small-caps;
+  font-variant-ligatures: none;
 }
 
 .description-text-subpage {
-  color: var(--color1);
   padding-top: 7px;
   text-shadow: none;
   font-size: 1rem;
@@ -318,12 +325,7 @@ img{
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 10px;
-  text-indent: 100px;
-  /*
-  column-count: 2;
-  column-gap: 40px;
-  column-rule: 2px solid;
-  orphans: 2;*/
+  text-indent: 50px;
 }
 
 .description-text-subpage p {
@@ -333,8 +335,9 @@ img{
 }
 
 .description-text-subpage :first-of-type::first-letter {
-  font-family: var(--font3);
-  font-size: 657%;
+  font-family: var(--font1);
+  color:rgb(255, 141, 202);
+  font-size: 500%;
   float: left;
   margin-top: 3px;
   padding: 5px;
@@ -360,6 +363,7 @@ img{
   text-align: left;
   padding: 0;
   line-height: 2;
+  color: rgb(255, 141, 202)
 }
 
 /*Buttons*/
