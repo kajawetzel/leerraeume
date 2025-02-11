@@ -14,6 +14,7 @@
   --font1: Goudy;
   --font2: Goudy-bold;
   --font3: Initials;
+  --font4: Decor;
 }
 
 html {
@@ -44,11 +45,16 @@ h1 {
   text-transform: none;
   font-family: var(--font2), cursive;
   line-height: 0.85;
-  letter-spacing: -0.1;
+  letter-spacing: -0.2;
   text-align: center;
 }
 h3{
   color: var(--color2);
+  rotate: 90deg;
+  font-family: var(--font4);
+  font-size: 5rem;
+  line-height: 0.5;
+  font-weight: 100;
 }
 
 p {
@@ -57,7 +63,7 @@ font-family: var(--font1), Garamond, serif;
 padding: 5px;
 hyphens: auto;
 line-height: 1.2;
-letter-spacing: -.0rem;
+letter-spacing: -.2px;
 }
 
 strong{
@@ -68,10 +74,9 @@ strong{
   font-variant: small-caps;
 }
 span{
-  font-family: var(--font1);
+  font-family: var(--font2);
   display: block;
-  font-size: 3rem;
-  letter-spacing: 1.2px;
+  font-size: 2.7rem;
 }
 
 img{
@@ -146,16 +151,16 @@ img{
 
 .heading{
   color: var(--color2);
-  padding-top: 8px;
   padding-right: 2px;
   padding-left: 4px;
-  margin-bottom: -2px;
-  font-size: 5rem;
+  font-size: 6rem;
+  margin-top: -8px;
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 576px) {
   .heading{
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .subheading{
@@ -174,6 +179,7 @@ img{
 .subheading {
   font-size: 1.5rem;
   hyphens: auto;
+  font-family: var(--font2);
   color: var(--color2);
   line-height: 0.8;
   text-align: center;
@@ -287,9 +293,10 @@ img{
   height: 80vh;
   min-width: 40vw;
   max-width: 50vw;
-  overflow-y: scroll;
   scrollbar-width: none;
-  border: 5px double var(--color4)
+
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .title-subpage,
@@ -375,8 +382,8 @@ p {
   color: var(--color2);
   background-color: transparent;
   border: none;
-  font-size: 3rem;
-  font-family: var(--font1);
+  font-size: 4rem;
+  font-family: var(--font4);
   cursor: pointer;
   position: fixed;
   top: 42vh;
@@ -385,10 +392,10 @@ p {
 .btn-right{
   right: 0;
 }
-
+/*
 .btn-left{
   rotate: 180deg;
-}
+}*/
 
 .btn:hover{
   transform: scale(1.5);
@@ -484,11 +491,10 @@ textarea,
   border-radius: 0;
   line-height: 1.1;
   font-size: 1.1rem;
-  color: var(--color2);
   padding: 5px;
-  background-color: var(--color2);
+  background-color: var(--color1);
   border: none;
-  color: var(--color1);
+  color: var(--color2);
   font-family: var(--font1), Garamond, serif;
   width: 400px;
 }
@@ -545,8 +551,9 @@ form{
 }
 
 input::placeholder,
-textarea::placeholder{
-  color: var(--color1);
+textarea::placeholder,
+.btn-upload-file{
+  color: var(--color2);
 }
 
 label{
@@ -555,7 +562,6 @@ label{
 
 .btn-upload-file{
   font-size: 1.1rem;
-  color: var(--color1);
   padding: 5px;
   padding-top: 5px;
 }
@@ -628,7 +634,7 @@ label{
 
 .text-success{
   margin-bottom: -20px;
-  font-family: var(--font1), cursive;
+  font-family: var(--font2), cursive;
   line-height: 0.9;
   font-size: 3rem;
   color: var(--color2);
@@ -651,33 +657,37 @@ label{
   
 .background-text-slide p{
   font-family: Decor;
-  font-size: 10rem;
   color: var(--color1);
-  -webkit-text-stroke: 1px var(--color4);
+  -webkit-text-stroke: 0.7px var(--color4);
   position: absolute;
   z-index: -1;
+  overflow: hidden;
+
 }
 
 .background-text-slide p:nth-child(1){
-  top: 20px;
-  left: 200px;
+  font-size: 20rem;
+  top: -70px;
+  right: 0px;
 }
 
 .background-text-slide p:nth-child(2){
-  display:none;
-  font-size: 7rem;
+  font-size: 17rem;
   top: 200px;
-  left: 10px;
+  left: -90px;
+  rotate: 25deg;
 }
 
 .background-text-slide p:nth-child(3){
-  display: none;
-  font-size: 17rem;
-  top: 400px;
-  left: 350px;
+  font-size: 20rem;
+  top: 300px;
+  right: -280px;
+  rotate: -75deg;
 }
 .background-text-slide p:nth-child(4){
   font-size: 10rem;
+  display: none;
   top: -40px;
   left: -20px;
+  rotate: -10deg;
 }
