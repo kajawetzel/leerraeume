@@ -9,9 +9,14 @@
     font-style: bold;
 }
 
-
 @font-face {
     font-family: Initials;
     src: url(/assets/fonts/GoudyInitialen.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Decor;
+    src: url(/assets/fonts/allerleizierat3.ttf);
     font-style: normal;
 }
