@@ -10,6 +10,7 @@
   --color1: #000000;
   --color2: white;
   --color3: rgb(123, 123, 123);
+  --color4: rgb(255, 147, 223);
   --font1: Goudy;
   --font2: Goudy-bold;
   --font3: Initials;
@@ -39,7 +40,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-transform: none;
   font-family: var(--font2), cursive;
   line-height: 0.85;
@@ -283,7 +284,7 @@ img{
 
 /*Typo*/
 .text-slide{
-  background-color: rgba(255, 121, 237, 0.059);
+  background-color: rgba(255, 147, 223, 0.106);
   height: 80vh;
   min-width: 40vw;
   max-width: 50vw;
@@ -295,7 +296,7 @@ img{
 .subtitle-subpage,
 .description-text-subpage,
 p {
-  color: rgb(255, 255, 255);
+  color: var(--color2);
 }
 
 .title-subpage {
@@ -303,7 +304,7 @@ p {
   padding-top: 25px;
   text-align: center;
   margin: 10px;
-  color: rgb(255, 141, 202);
+  color: var(--color4);
 }
 
 .subtitle-subpage{
@@ -335,12 +336,14 @@ p {
 }
 
 .description-text-subpage :first-of-type::first-letter {
-  font-family: var(--font1);
-  color:rgb(255, 141, 202);
-  font-size: 500%;
+  font-family: var(--font2);
+  -webkit-text-stroke: 1px var(--color2);
+  color: var(--color4);
+  font-size: 730%;
   float: left;
-  margin-top: 3px;
-  padding: 5px;
+  margin-top: 5px;
+  padding: 7px;
+  padding-bottom: 2px;
   padding-left: 0;
 }
 
@@ -363,7 +366,7 @@ p {
   text-align: left;
   padding: 0;
   line-height: 2;
-  color: rgb(255, 141, 202)
+  color: var(--color4);
 }
 
 /*Buttons*/
