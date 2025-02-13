@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: Initials;
-    src: url(/assets/fonts/GoudyInitialen.ttf);
+    src: url(/assets/fonts/DecoratedRomanInitials.ttf);
     font-style: normal;
 }
 
@@ -19,4 +19,9 @@
     font-family: Decor;
     src: url(/assets/fonts/allerleizierat3.ttf);
     font-style: normal;
+}
+
+@font-face {
+    font-family: Decor-2;
+    src: url(/assets/fonts/ORNA4___.TTF);
 }

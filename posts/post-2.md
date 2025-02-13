@@ -1,5 +1,5 @@
 ---
-title: "Metzgerei Mayer"
+title: "Metzgerei<br>Mayer"
 slug: "metzgerei-mayer-engen"
 ort: "Engen"
 plz: "78234"
