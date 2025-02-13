@@ -1,27 +1,27 @@
 @font-face {
     font-family: Goudy;
-    src: url(/assets/fonts/GOUDOS.TTF);
+    src: url(/assets/fonts/GoudyBook.woff2);
 }
 
 @font-face {
     font-family: Goudy-bold;
-    src: url(/assets/fonts/GOUDOSB.TTF);
+    src: url(/assets/fonts/GoudyBold.woff2);
     font-style: bold;
 }
 
 @font-face {
     font-family: Initials;
-    src: url(/assets/fonts/DecoratedRomanInitials.ttf);
+    src: url(/assets/fonts/DecoratedRomanInitials.woff2);
     font-style: normal;
 }
 
 @font-face {
     font-family: Decor;
-    src: url(/assets/fonts/allerleizierat3.ttf);
+    src: url(/assets/fonts/allerleizierat3.woff2);
     font-style: normal;
 }
 
 @font-face {
     font-family: Decor-2;
-    src: url(/assets/fonts/ORNA4___.TTF);
+    src: url(/assets/fonts/ornaments.woff2);
 }
