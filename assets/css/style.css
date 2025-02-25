@@ -407,18 +407,38 @@ p {
 }
 
 @media only screen and (max-width: 680px) {
+  h1{
+    font-size: 4rem;
+  }
+
+  .description-text-subpage :first-of-type::first-letter{
+    font-size:600%;
+  }
+
   .img-posts {
     height: 60vh;
+  }
+
+  .description-text-subpage {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-indent: 50px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   h1{
-    font-size:2.5rem;
+    font-size:3rem;
   }
 
+  .description-text-subpage :first-of-type::first-letter{
+    font-size:550%;
+  }
+
+
   .subtitle-subpage{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -511,6 +531,7 @@ textarea,
   border: 5px double var(--color2);
   padding-right: 5px;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 input:focus, 
