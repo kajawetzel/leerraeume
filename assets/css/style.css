@@ -353,6 +353,8 @@ p {
   float: left;
   padding: 7px;
   margin-top: 2px;
+  line-height: 0.85;
+  vertical-align: top; /* optional */
 }
 
 .description-text-subpage :first-of-type {
@@ -709,4 +711,69 @@ svg{
   position: fixed;
   z-index: -1;
   color:blueviolet;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .menu{
+    margin-right: -0px;
+  }
+
+  .heading{
+    font-size: 10rem;
+  }
+
+  .section-gallery {
+    transform: perspective(800px) rotateY(40deg);
+  }
+  .subheading {
+    font-size: 2rem;
+}
+a {
+  font-size: 2rem;
+}
+
+span{
+  font-size: 5rem;
+}
+
+.btn{
+  font-size: 7rem;
+}
+
+.link-landing-page{
+  width: 40px;
+  height: 60px;
+}
+.container-link-landing-page{
+  gap: 4px;
+  top: 3vh;
+  left: 2vw;
+}
+
+h1{
+  font-size: 8rem;
+}
+
+.subtitle-subpage{
+  font-size: 1.4rem;
+}
+
+p{
+  font-size: 1.8rem;
+}
+
+strong{
+  font-size: 1.6rem;
+}
+
+input,
+textarea,
+.container-img-upload,
+.btn-submit{
+  font-size: 1.6rem;
+}
+.text-success{
+  font-size: 4rem;
+}
 }
