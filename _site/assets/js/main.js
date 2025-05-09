@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     items.forEach((item) => {
       const clone = item.cloneNode(true);
       carousel.appendChild(clone); // Klone ans Ende
-      carousel.offsetHeight; // Force reflow
     });
 
     items.forEach((item) => {
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
       carousel.insertBefore(clone, items[0]); // Klone an den Anfang
     });
   }
-  carousel.offsetHeight;
 
   // Animation für img-links
   const imgLinks = document.querySelectorAll(".img-link");
@@ -91,9 +89,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 1000); // Verzögerung entsprechend der CSS-Animation
     });
   }
-
-console.log("Forcing repaint");
-document.body.style.transform = "translateZ(0)"; // Trick: CSS Hack für Chrome
-
 });
-
