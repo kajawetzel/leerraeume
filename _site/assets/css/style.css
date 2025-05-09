@@ -21,7 +21,6 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 a {
@@ -107,6 +106,7 @@ img{
 .carousel-item {
   height: 70vh;
   transition: transform 0.2s ease, filter 0.5s ease;
+  z-index: 100;
 }
 
 .carousel-item:hover {
@@ -198,6 +198,7 @@ img{
   a{
     font-size: 1rem;
     cursor: pointer;
+    pointer-events: auto;
   }
 }
 
@@ -214,6 +215,10 @@ img{
     transform: scale(2);
     opacity: 0.6;
   }
+}
+
+.img-link{
+  pointer-events: auto;
 }
 
 .img-link img.transition {
@@ -600,6 +605,12 @@ label{
   filter: contrast(1000) brightness(700) grayscale(150);
 }
 */
+
+html, body, .carousel, .carousel-item {
+  will-change: transform;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
 /*LANDING_PAGE_BUTTON___________________________________________________*/
 .container-link-landing-page{
   display: flex;
@@ -714,7 +725,7 @@ svg{
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1500px) {
   .menu{
     margin-right: -0px;
   }
@@ -777,3 +788,4 @@ textarea,
   font-size: 4rem;
 }
 }
+

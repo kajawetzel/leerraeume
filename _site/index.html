@@ -51,6 +51,16 @@
     </div>
 </section>
 <script src="/assets/js/main.js"></script>
+<script>
+            // Verzögere die Aktivierung der Links ein kleines bisschen nach Page Load
+            window.addEventListener('load', () => {
+          setTimeout(() => {
+            document.querySelectorAll('.img-link').forEach(link => {
+              link.style.pointerEvents = 'auto'; // Sicherstellen, dass sie klickbar sind
+            });
+          }, 300); // 300 ms nach Page Load (anpassbar)
+        });
+</script>
 </div>
 <section class="section-text-on-top" id="section-to-toggle">
     <div class="menu">
